@@ -1,0 +1,10 @@
+{
+  "home": {
+    "bannerImage": "https://via.placeholder.com/1200x400"
+  },
+  "contact": {
+    "bankAccount": {
+      "upi": "your-upi-id@bank"
+    }
+  }
+}
