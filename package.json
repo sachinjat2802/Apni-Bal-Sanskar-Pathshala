@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Apni-Bal-Sanskar-Pathshala",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinjat2802/Apni-Bal-Sanskar-Pathshala.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sachinjat2802/Apni-Bal-Sanskar-Pathshala/issues"
+  },
+  "homepage": "https://github.com/sachinjat2802/Apni-Bal-Sanskar-Pathshala#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^6.0.1"
+  }
+}

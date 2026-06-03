@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center bg-gray-100 min-h-screen">
+    <div id="login-container" class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Admin Login</h2>
+        <div id="error-msg" class="text-red-500 mb-4 hidden">Invalid credentials. Access denied.</div>
+        <input type="text" id="username" placeholder="Username" class="w-full p-3 border mb-4 rounded">
+        <input type="password" id="password" placeholder="Password" class="w-full p-3 border mb-6 rounded">
+        <button onclick="login()" class="w-full py-3 bg-blue-600 text-white rounded font-bold hover:bg-blue-700">Login</button>
+    </div>
+
+    <div id="dashboard-container" class="bg-white p-8 rounded shadow-md w-full max-w-4xl hidden">
+        <div class="flex justify-between items-center mb-8 border-b pb-4">
+            <h2 class="text-3xl font-bold text-gray-800">Admin Dashboard</h2>
+            <button onclick="logout()" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Logout</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 border rounded">
+                <h3 class="text-xl mb-4 border-b inline-block pb-1">Site Settings</h3>
+                <p>Welcome to the admin panel. From here you can manage settings.</p>
+            </div>
+
+            <div class="p-4 border rounded">
+                <h3 class="text-xl mb-4 border-b inline-block pb-1">Actions</h3>
+                <button class="w-full mb-2 py-2 bg-gray-200 rounded">Manage Users</button>
+                <button class="w-full py-2 bg-gray-200 rounded">View Reports</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const u = document.getElementById('username').value;
+            const p = document.getElementById('password').value;
+
+            // Hardcoded fallback logic since backend won't work on GitHub Pages
+            if(u === 'admin' && p === 'password') {
+                document.getElementById('login-container').classList.add('hidden');
+                document.getElementById('dashboard-container').classList.remove('hidden');
+            } else {
+                document.getElementById('error-msg').classList.remove('hidden');
+            }
+        }
+
+        function logout() {
+            document.getElementById('login-container').classList.remove('hidden');
+            document.getElementById('dashboard-container').classList.add('hidden');
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+</html>
