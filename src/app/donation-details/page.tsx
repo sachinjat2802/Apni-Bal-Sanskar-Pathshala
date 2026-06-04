@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<head>
-    <!--=== Meta Tags ===-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--=== Link of CSS ===-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/modal-video.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/odometer.min.css">
-    <link rel="stylesheet" href="css/nice-select.min.css">
-    <link rel="stylesheet" href="css/style-1.css">
-    <link rel="stylesheet" href="css/responsive-1.css">
-    <link rel="stylesheet" href="css/theme-dark.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--=== Title & Favicon ===-->
-    <title>Uthan seva sansthan</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-</head>
-
-<body>
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
     <!-- Preloader -->
     <div class="loader">
         <div class="d-table">
@@ -52,7 +23,7 @@
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="donation-details.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -96,8 +67,8 @@
     <div class="navbar-area sticky-top">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo">
+            <a href="/Apni-Bal-Sanskar-Pathshala/" class="logo">
+                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" alt="Logo">
             </a>
         </div>
 
@@ -105,59 +76,59 @@
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" class="logo-one" alt="Logo">
-                        <img src="images/logo.png" class="logo-two" alt="Logo">
+                    <a class="navbar-brand" href="/Apni-Bal-Sanskar-Pathshala/">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-one" alt="Logo">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-two" alt="Logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link dropdown-toggle active">Home </a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/" class="nav-link dropdown-toggle active">Home </a>
 
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="gallery.html" class="nav-link">Gallery</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="donation-details.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="donations.html" class="nav-link">Donations</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="donation-details.html#" class="nav-link">Donation Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="our-document.html" class="nav-link">Documents</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/our-document" class="nav-link">Documents</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Blog <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog" class="nav-link">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog-details" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
                             </li> -->
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="donation-details.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -181,7 +152,7 @@
                         <h2>Donations</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/">Home</a>
                             </li>
                             <li>
                                 <span>Donations</span>
@@ -202,7 +173,7 @@
                     <div class="details-item">
 
                         <div class="details-img">
-                            <img src="images/gallary-img/20.jpeg" alt="Details">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/20.jpeg" alt="Details">
                             <h2>Join Our Yoga Initiative for a Healthier & Balanced Life</h2>
                             <p>
                                 Our yoga program is dedicated to promoting physical health, mental peace, and emotional
@@ -258,22 +229,22 @@
                                                 <span>Share:</span>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#" target="_blank">
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" target="_blank">
                                                     <i class="icofont-facebook"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#" target="_blank">
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" target="_blank">
                                                     <i class="icofont-twitter"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#" target="_blank">
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" target="_blank">
                                                     <i class="icofont-youtube-play"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#" target="_blank">
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#" target="_blank">
                                                     <i class="icofont-instagram"></i>
                                                 </a>
                                             </li>
@@ -288,13 +259,13 @@
                                                 <span>Tags:</span>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#">#Donation</a>
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">#Donation</a>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#">#Food</a>
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">#Food</a>
                                             </li>
                                             <li>
-                                                <a href="donation-details.html#">#Help</a>
+                                                <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">#Help</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -357,7 +328,7 @@
                                         <label>
                                             <i class="icofont-dollar"></i>
                                         </label>
-                                        <input type="text" class="form-control" placeholder="$100.00">
+                                        <input type="text" class="form-control" placeholder="\$100.00">
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn common-btn">Donate Now</button>
@@ -386,52 +357,52 @@
                             <div class="post-inner">
                                 <ul class="align-items-center">
                                     <li>
-                                        <img src="images/gallary-img/2.jpeg" alt="Details">
+                                        <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/2.jpeg" alt="Details">
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="donation-details.html#">Donate for nutrition less poor people</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Donate for nutrition less poor people</a>
                                         </h4>
-                                        <p>By - <a href="donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
                             <div class="post-inner">
                                 <ul class="align-items-center">
                                     <li>
-                                        <img src="images/gallary-img/3.jpeg" alt="Details">
+                                        <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/3.jpeg" alt="Details">
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="donation-details.html#">Charity meetup in Berlin next year</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Charity meetup in Berlin next year</a>
                                         </h4>
-                                        <p>By - <a href="donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
                             <div class="post-inner">
                                 <ul class="align-items-center">
                                     <li>
-                                        <img src="images/gallary-img/4.jpeg" alt="Details">
+                                        <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/4.jpeg" alt="Details">
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="donation-details.html#">Donate for poor people for food & water</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Donate for poor people for food & water</a>
                                         </h4>
-                                        <p>By - <a href="donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
                             <div class="post-inner">
                                 <ul class="align-items-center">
                                     <li>
-                                        <img src="images/gallary-img/5.jpeg" alt="Details">
+                                        <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/5.jpeg" alt="Details">
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="donation-details.html#">Little Sanjana joined in a charity to help people</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Little Sanjana joined in a charity to help people</a>
                                         </h4>
-                                        <p>By - <a href="donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -441,16 +412,16 @@
                             <h3>Archives</h3>
                             <ul>
                                 <li>
-                                    <a href="donation-details.html#">January 2024</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">January 2024</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">May 2024</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">May 2024</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">April 2024</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">April 2024</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">June 2024</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">June 2024</a>
                                 </li>
                             </ul>
                         </div>
@@ -459,19 +430,19 @@
                             <h3>Categories</h3>
                             <ul>
                                 <li>
-                                    <a href="donation-details.html#">Education (10)</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Education (10)</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">Medical (25)</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Medical (25)</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">Food & Water (14)</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Food & Water (14)</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">National Charity (2)</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">National Charity (2)</a>
                                 </li>
                                 <li>
-                                    <a href="donation-details.html#">Cloth (4)</a>
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Cloth (4)</a>
                                 </li>
                             </ul>
                         </div>
@@ -495,8 +466,8 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="footer-item">
                         <div class="footer-logo">
-                            <a class="logo" href="index.html">
-                                <img src="images/logo.png" class="w-25" alt="Logo">
+                            <a class="logo" href="/Apni-Bal-Sanskar-Pathshala/">
+                                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="w-25" alt="Logo">
                             </a>
                             <p>We are committed to creating a positive impact by providing education, promoting health
                                 and wellness, protecting the environment, and supporting underprivileged communities.
@@ -531,7 +502,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="donation-details.html#">Education for Underprivileged Children</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -541,7 +512,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="donation-details.html#">Support Environmental Protection</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -557,7 +528,7 @@
                             <h3>Quick links</h3>
                             <ul>
                                 <li>
-                                    <a href="about.html">
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/about">
                                         <i class="icofont-simple-right"></i>
                                         About
                                     </a>
@@ -582,7 +553,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -594,7 +565,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -783,21 +754,21 @@
 
 
     <!--=== Essential JS ===-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/jquery-modal-video.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/odometer.min.js"></script>
-    <script src="js/jquery.appear.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/bootstrap.bundle.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/form-validator.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/contact-form-script.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.meanmenu.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery-modal-video.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/wow.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/lightbox.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/owl.carousel.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/odometer.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.appear.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.nice-select.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/custom.js"></script>
 
-</body>
-
-</html>
+` }} />
+  );
+}

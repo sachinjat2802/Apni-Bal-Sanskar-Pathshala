@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<head>
-    <!--=== Meta Tags ===-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--=== Link of CSS ===-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/modal-video.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/odometer.min.css">
-    <link rel="stylesheet" href="css/nice-select.min.css">
-    <link rel="stylesheet" href="css/style-1.css">
-    <link rel="stylesheet" href="css/responsive-1.css">
-    <link rel="stylesheet" href="css/theme-dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--=== Title & Favicon ===-->
-    <title>Uthan seva sansthan</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-
-    <style>
-        .our-documents {
-
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-
-<body>
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
     <!-- Preloader -->
     <div class="loader">
         <div class="d-table">
@@ -58,7 +23,7 @@
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="our-document.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -102,8 +67,8 @@
     <div class="navbar-area sticky-top">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo">
+            <a href="/Apni-Bal-Sanskar-Pathshala/" class="logo">
+                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" alt="Logo">
             </a>
         </div>
 
@@ -111,59 +76,59 @@
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" class="logo-one" alt="Logo">
-                        <img src="images/logo.png" class="logo-two" alt="Logo">
+                    <a class="navbar-brand" href="/Apni-Bal-Sanskar-Pathshala/">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-one" alt="Logo">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-two" alt="Logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link dropdown-toggle active">Home </a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/" class="nav-link dropdown-toggle active">Home </a>
 
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="gallery.html" class="nav-link">Gallery</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="our-document.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="donations.html" class="nav-link">Donations</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="our-document.html#" class="nav-link">Donation Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="our-document.html" class="nav-link">Documents</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/our-document" class="nav-link">Documents</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Blog <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog" class="nav-link">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog-details" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
                             </li> -->
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="our-document.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/Apni-Bal-Sanskar-Pathshala/contact.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -176,20 +141,19 @@
     <!-- End Navbar -->
 
 
-
     <!-- Page Title -->
-    <div class="page-title-area title-bg-four">
+    <div class="page-title-area title-bg-eight">
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container">
                     <div class="title-item">
-                        <h2>Our Documents</h2>
+                        <h2>Contact</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/">Home</a>
                             </li>
                             <li>
-                                <span>Our Documents</span>
+                                <span>Contact</span>
                             </li>
                         </ul>
                     </div>
@@ -198,36 +162,147 @@
         </div>
     </div>
     <!-- End Page Title -->
-    <section class="event-area four ptb-100">
 
+    <!--=== Contact Info ===-->
+    <div class="contact-info-area pt-100 pb-70">
         <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Our Legal Documents</span>
-                <h2 class="text-dark">Our Legal Documents</h2>
-                <p>Access our legal documents including policies, terms, guidelines ensuring transparency, compliance,
-                    and user rights protection.</p>
-            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="contact-info">
+                        <i class="icofont-location-pin"></i>
+                        <span>Location:</span>
+                        <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="our-documents">
-                        <img src="images/documents/1.jpeg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="our-documents">
-                        <img src="images/documents/2.jpeg" alt="">
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="contact-info">
+                        <i class="icofont-ui-call"></i>
+                        <span>Phone:</span>
+                        <a href="tel:9828603138">982-860-3138</a>
+                        <a href="tel: 9785488455"> 978-548-8455</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="our-documents">
-                        <img src="images/documents/1.jpeg" alt="">
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="contact-info">
+                        <i class="icofont-ui-email"></i>
+                        <span>Email:</span>
+                        <a href="mailto:apni.bal.sanskarpathshala1@gmail.com">apni.bal.sanskarpathshala1@gmail.com</a>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!--=== End Contact Info ===-->
 
+    <!-- Contact -->
+    <div class="contact-area pb-70">
+        <div class="container">
+
+            <form id="contactForm">
+                <h2>Let's talk...!</h2>
+                <p>
+                    Uttan Seva Sansthan is dedicated to serving society by supporting underprivileged communities
+                    and promoting a better quality of life. Our organization works continuously to provide
+                    essential services such as education, healthcare, food, and social awareness programs.
+                </p>
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>
+                                <i class="icofont-user-alt-3"></i>
+                            </label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required=""
+                                data-error="Please enter your name">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>
+                                <i class="icofont-ui-email"></i>
+                            </label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                                required="" data-error="Please enter your email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>
+                                <i class="icofont-ui-call"></i>
+                            </label>
+                            <input type="text" name="phone_number" id="phone_number" placeholder="Phone" required=""
+                                data-error="Please enter your number" class="form-control">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label>
+                                <i class="icofont-notepad"></i>
+                            </label>
+                            <input type="text" name="msg_subject" id="msg_subject" class="form-control"
+                                placeholder="Subject" required="" data-error="Please enter your subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>
+                                <i class="icofont-comment"></i>
+                            </label>
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="8"
+                                placeholder="Write message" required="" data-error="Write your message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <div class="form-check agree-label">
+                                <input name="gridCheck" value="I agree to the terms and privacy policy."
+                                    class="form-check-input" type="checkbox" id="gridCheck" required="">
+                                <label class="form-check-label" for="gridCheck">
+                                    Accept <a href="https://uthansevasansthan.com/terms-condition.html">Terms & Conditions</a> And <a
+                                        href="https://uthansevasansthan.com/privacy-policy.html">Privacy Policy.</a>
+                                </label>
+                                <div class="help-block with-errors gridCheck-error"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <button type="submit" class="btn common-btn">
+                            Send Message
+                        </button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <!-- End Contact -->
+
+    <!-- Map -->
+    <div class="map-area">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.9627039067564!2d75.74666997527362!3d26.968080376614264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db2fb3ab1b94b%3A0x7edf17cc869f496e!2s31%2C%20Green%20Park%20Ext%2C%20Dadi%20Ka%20Phatak%2C%20Anand%20Vihar%2C%20Sita%20Vihar%2C%20Jaipur%2C%20Rajasthan%20302012!5e0!3m2!1sen!2sin!4v1774432470019!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- End Map -->
 
     <!-- Footer -->
     <footer class="footer-area pt-100">
@@ -237,8 +312,8 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="footer-item">
                         <div class="footer-logo">
-                            <a class="logo" href="index.html">
-                                <img src="images/logo.png" class="w-25" alt="Logo">
+                            <a class="logo" href="/Apni-Bal-Sanskar-Pathshala/">
+                                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="w-25" alt="Logo">
                             </a>
                             <p>We are committed to creating a positive impact by providing education, promoting health
                                 and wellness, protecting the environment, and supporting underprivileged communities.
@@ -273,7 +348,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="our-document.html#">Education for Underprivileged Children</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -283,7 +358,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="our-document.html#">Support Environmental Protection</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -299,7 +374,7 @@
                             <h3>Quick links</h3>
                             <ul>
                                 <li>
-                                    <a href="about.html">
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/about">
                                         <i class="icofont-simple-right"></i>
                                         About
                                     </a>
@@ -324,7 +399,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="our-document.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -336,7 +411,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="our-document.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -525,21 +600,21 @@
 
 
     <!--=== Essential JS ===-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/jquery-modal-video.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/odometer.min.js"></script>
-    <script src="js/jquery.appear.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/bootstrap.bundle.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/form-validator.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/contact-form-script.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.meanmenu.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery-modal-video.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/wow.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/lightbox.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/owl.carousel.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/odometer.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.appear.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.nice-select.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/custom.js"></script>
 
-</body>
-
-</html>
+` }} />
+  );
+}

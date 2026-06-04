@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<head>
-    <!--=== Meta Tags ===-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--=== Link of CSS ===-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/modal-video.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/odometer.min.css">
-    <link rel="stylesheet" href="css/nice-select.min.css">
-    <link rel="stylesheet" href="css/style-1.css">
-    <link rel="stylesheet" href="css/responsive-1.css">
-    <link rel="stylesheet" href="css/theme-dark.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!--=== Title & Favicon ===-->
-    <title>Uthan seva sansthan</title>
-    <link rel="icon" type="image/png" href="images/logo.png">
-</head>
-
-<body>
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
     <!-- Preloader -->
     <div class="loader">
         <div class="d-table">
@@ -52,7 +23,7 @@
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="gallery.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -96,8 +67,8 @@
     <div class="navbar-area sticky-top">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo">
+            <a href="/Apni-Bal-Sanskar-Pathshala/" class="logo">
+                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" alt="Logo">
             </a>
         </div>
 
@@ -105,59 +76,59 @@
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" class="logo-one" alt="Logo">
-                        <img src="images/logo.png" class="logo-two" alt="Logo">
+                    <a class="navbar-brand" href="/Apni-Bal-Sanskar-Pathshala/">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-one" alt="Logo">
+                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-two" alt="Logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link dropdown-toggle active">Home </a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/" class="nav-link dropdown-toggle active">Home </a>
 
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="gallery.html" class="nav-link">Gallery</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="gallery.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="donations.html" class="nav-link">Donations</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="gallery.html#" class="nav-link">Donation Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="our-document.html" class="nav-link">Documents</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/our-document" class="nav-link">Documents</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Blog <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="blog.html" class="nav-link">Blog</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog" class="nav-link">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog-details" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
                             </li> -->
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="gallery.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/Apni-Bal-Sanskar-Pathshala/gallery.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -181,7 +152,7 @@
                         <h2>Gallery</h2>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="/Apni-Bal-Sanskar-Pathshala/">Home</a>
                             </li>
                             <li>
                                 <span>Gallery</span>
@@ -210,8 +181,8 @@
                 <!-- 1 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/1.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/1.jpeg" class="img-fluid" alt="Gallery 1">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/1.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/1.jpeg" class="img-fluid" alt="Gallery 1">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -220,8 +191,8 @@
                 <!-- 2 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/2.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/2.jpeg" class="img-fluid" alt="Gallery 2">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/2.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/2.jpeg" class="img-fluid" alt="Gallery 2">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -230,8 +201,8 @@
                 <!-- 3 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/3.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/3.jpeg" class="img-fluid" alt="Gallery 3">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/3.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/3.jpeg" class="img-fluid" alt="Gallery 3">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -240,8 +211,8 @@
                 <!-- 4 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/4.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/4.jpeg" class="img-fluid" alt="Gallery 4">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/4.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/4.jpeg" class="img-fluid" alt="Gallery 4">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -250,8 +221,8 @@
                 <!-- 5 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/5.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/5.jpeg" class="img-fluid" alt="Gallery 5">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/5.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/5.jpeg" class="img-fluid" alt="Gallery 5">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -260,8 +231,8 @@
                 <!-- 6 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/6.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/6.jpeg" class="img-fluid" alt="Gallery 6">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/6.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/6.jpeg" class="img-fluid" alt="Gallery 6">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -270,8 +241,8 @@
                 <!-- 7 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/7.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/7.jpeg" class="img-fluid" alt="Gallery 7">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/7.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/7.jpeg" class="img-fluid" alt="Gallery 7">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -280,8 +251,8 @@
                 <!-- 8 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/8.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/8.jpeg" class="img-fluid" alt="Gallery 8">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/8.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/8.jpeg" class="img-fluid" alt="Gallery 8">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -290,8 +261,8 @@
                 <!-- 9 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/9.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/9.jpeg" class="img-fluid" alt="Gallery 9">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/9.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/9.jpeg" class="img-fluid" alt="Gallery 9">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -300,8 +271,8 @@
                 <!-- 10 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/10.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/10.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/10.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/10.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -309,8 +280,8 @@
                 <!-- 10 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/11.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/11.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/11.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/11.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -318,8 +289,8 @@
                 <!-- 11 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/13.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/13.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/13.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/13.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -327,152 +298,152 @@
                 <!-- 11 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/15.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/15.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/15.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/15.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/16.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/16.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/16.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/16.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/17.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/17.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/17.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/17.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/18.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/18.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/18.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/18.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/19.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/19.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/19.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/19.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/20.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/20.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/20.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/20.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/22.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/22.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/22.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/22.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/23.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/23.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/23.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/23.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/24.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/24.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/24.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/24.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/25.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/25.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/25.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/25.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/26.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/26.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/26.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/26.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/27.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/27.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/27.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/27.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/28.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/28.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/28.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/28.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/29.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/29.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/29.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/29.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/30.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/30.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/30.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/30.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/31.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/31.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/31.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/31.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/32.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/32.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/32.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/32.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/33.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/33.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/33.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/33.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/34.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/34.jpeg" class="img-fluid" alt="Gallery 10">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/34.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/34.jpeg" class="img-fluid" alt="Gallery 10">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -482,8 +453,8 @@
                 <!-- 35 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/35.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/35.jpeg" class="img-fluid" alt="Gallery 35">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/35.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/35.jpeg" class="img-fluid" alt="Gallery 35">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -492,8 +463,8 @@
                 <!-- 36 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/36.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/36.jpeg" class="img-fluid" alt="Gallery 36">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/36.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/36.jpeg" class="img-fluid" alt="Gallery 36">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -502,8 +473,8 @@
                 <!-- 37 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/37.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/37.jpeg" class="img-fluid" alt="Gallery 37">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/37.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/37.jpeg" class="img-fluid" alt="Gallery 37">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -512,8 +483,8 @@
                 <!-- 38 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/38.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/38.jpeg" class="img-fluid" alt="Gallery 38">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/38.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/38.jpeg" class="img-fluid" alt="Gallery 38">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -522,8 +493,8 @@
                 <!-- 39 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/39.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/39.jpeg" class="img-fluid" alt="Gallery 39">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/39.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/39.jpeg" class="img-fluid" alt="Gallery 39">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -532,8 +503,8 @@
                 <!-- 40 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/40.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/40.jpeg" class="img-fluid" alt="Gallery 40">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/40.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/40.jpeg" class="img-fluid" alt="Gallery 40">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -542,8 +513,8 @@
                 <!-- 41 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/41.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/41.jpeg" class="img-fluid" alt="Gallery 41">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/41.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/41.jpeg" class="img-fluid" alt="Gallery 41">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -552,8 +523,8 @@
                 <!-- 42 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/42.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/42.jpeg" class="img-fluid" alt="Gallery 42">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/42.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/42.jpeg" class="img-fluid" alt="Gallery 42">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -562,8 +533,8 @@
                 <!-- 43 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/43.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/43.jpeg" class="img-fluid" alt="Gallery 43">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/43.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/43.jpeg" class="img-fluid" alt="Gallery 43">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -572,8 +543,8 @@
                 <!-- 44 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/44.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/44.jpeg" class="img-fluid" alt="Gallery 44">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/44.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/44.jpeg" class="img-fluid" alt="Gallery 44">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -582,8 +553,8 @@
                 <!-- 45 -->
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
                     <div class="gallery-item">
-                        <a href="images/gallary-img/45.jpeg" data-lightbox="roadtrip">
-                            <img src="images/gallary-img/45.jpeg" class="img-fluid" alt="Gallery 45">
+                        <a href="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/45.jpeg" data-lightbox="roadtrip">
+                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/45.jpeg" class="img-fluid" alt="Gallery 45">
                             <i class="icofont-eye"></i>
                         </a>
                     </div>
@@ -625,8 +596,8 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="footer-item">
                         <div class="footer-logo">
-                            <a class="logo" href="index.html">
-                                <img src="images/logo.png" class="w-25" alt="Logo">
+                            <a class="logo" href="/Apni-Bal-Sanskar-Pathshala/">
+                                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="w-25" alt="Logo">
                             </a>
                             <p>We are committed to creating a positive impact by providing education, promoting health
                                 and wellness, protecting the environment, and supporting underprivileged communities.
@@ -661,7 +632,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="gallery.html#">Education for Underprivileged Children</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -671,7 +642,7 @@
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="gallery.html#">Support Environmental Protection</a>
+                                            <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -687,7 +658,7 @@
                             <h3>Quick links</h3>
                             <ul>
                                 <li>
-                                    <a href="about.html">
+                                    <a href="/Apni-Bal-Sanskar-Pathshala/about">
                                         <i class="icofont-simple-right"></i>
                                         About
                                     </a>
@@ -712,7 +683,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -724,7 +695,7 @@
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/Apni-Bal-Sanskar-Pathshala/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -912,21 +883,21 @@
 
 
     <!--=== Essential JS ===-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/jquery-modal-video.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/odometer.min.js"></script>
-    <script src="js/jquery.appear.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/bootstrap.bundle.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/form-validator.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/contact-form-script.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.meanmenu.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery-modal-video.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/wow.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/lightbox.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/owl.carousel.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/odometer.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.appear.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.nice-select.min.js"></script>
+    <script src="/Apni-Bal-Sanskar-Pathshala/js/custom.js"></script>
 
-</body>
-
-</html>
+` }} />
+  );
+}
