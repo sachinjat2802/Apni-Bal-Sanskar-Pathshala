@@ -23,7 +23,7 @@ export default function Page() {
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/donations.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -70,8 +70,8 @@ export default function Page() {
     <div class="navbar-area sticky-top">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
-            <a href="/Apni-Bal-Sanskar-Pathshala/" class="logo">
-                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" alt="Logo">
+            <a href="/" class="logo">
+                <img src="/images/logo.png" alt="Logo">
             </a>
         </div>
 
@@ -79,59 +79,59 @@ export default function Page() {
         <div class="main-nav">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/Apni-Bal-Sanskar-Pathshala/">
-                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="logo-two" alt="Logo">
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/logo.png" class="logo-one" alt="Logo">
+                        <img src="/images/logo.png" class="logo-two" alt="Logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/" class="nav-link dropdown-toggle active">Home </a>
+                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
 
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/about" class="nav-link">About</a>
+                                <a href="/about" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/gallery" class="nav-link">Gallery</a>
+                                <a href="/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/donations.html#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations" class="nav-link">Donations</a>
+                                        <a href="/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/donation-details" class="nav-link">Donation Details</a>
+                                        <a href="/donation-details" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
 
 
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/our-document" class="nav-link">Documents</a>
+                                <a href="/our-document" class="nav-link">Documents</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Blog <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog" class="nav-link">Blog</a>
+                                        <a href="/blog" class="nav-link">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/blog-details" class="nav-link">Blog Details</a>
+                                        <a href="/blog-details" class="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
                             </li> -->
                             <li class="nav-item">
-                                <a href="/Apni-Bal-Sanskar-Pathshala/contact" class="nav-link">Contact</a>
+                                <a href="/contact" class="nav-link">Contact</a>
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="/Apni-Bal-Sanskar-Pathshala/donations.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/donations.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -152,7 +152,7 @@ export default function Page() {
                         <h2>Donations</h2>
                         <ul>
                             <li>
-                                <a href="/Apni-Bal-Sanskar-Pathshala/">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <span>Donations</span>
@@ -174,14 +174,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/20.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/20.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Medical</a>
+                                <a class="tags" href="/donations.html#">#Medical</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Need help for treatment</a>
+                                    <a href="/donation-details">Need help for treatment</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -206,14 +206,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/13.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/13.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Education</a>
+                                <a class="tags" href="/donations.html#">#Education</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Education for poor children</a>
+                                    <a href="/donation-details">Education for poor children</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -238,14 +238,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/35.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/35.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Family</a>
+                                <a class="tags" href="/donations.html#">#Family</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Financial help for poor</a>
+                                    <a href="/donation-details">Financial help for poor</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -270,14 +270,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/15.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/15.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Funding</a>
+                                <a class="tags" href="/donations.html#">#Funding</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Funding for family</a>
+                                    <a href="/donation-details">Funding for family</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -302,14 +302,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/16.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/16.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Relief</a>
+                                <a class="tags" href="/donations.html#">#Relief</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Relief for cyclone-affected</a>
+                                    <a href="/donation-details">Relief for cyclone-affected</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -334,14 +334,14 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-4">
                     <div class="donation-item">
                         <div class="img">
-                            <img src="/Apni-Bal-Sanskar-Pathshala/images/gallary-img/17.jpeg" alt="Donation">
-                            <a class="common-btn" href="/Apni-Bal-Sanskar-Pathshala/donation-details">Donate Now</a>
+                            <img src="/images/gallary-img/17.jpeg" alt="Donation">
+                            <a class="common-btn" href="/donation-details">Donate Now</a>
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">#Drought</a>
+                                <a class="tags" href="/donations.html#">#Drought</a>
                                 <h3>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/donation-details">Relief for drought-affected</a>
+                                    <a href="/donation-details">Relief for drought-affected</a>
                                 </h3>
                                 <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
                                     individual
@@ -367,19 +367,19 @@ export default function Page() {
             <div class="pagination-area">
                 <ul>
                     <li>
-                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">Prev</a>
+                        <a href="/donations.html#">Prev</a>
                     </li>
                     <li>
-                        <a class="active" href="/Apni-Bal-Sanskar-Pathshala/donations.html#">1</a>
+                        <a class="active" href="/donations.html#">1</a>
                     </li>
                     <li>
-                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">2</a>
+                        <a href="/donations.html#">2</a>
                     </li>
                     <li>
-                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">3</a>
+                        <a href="/donations.html#">3</a>
                     </li>
                     <li>
-                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">Next</a>
+                        <a href="/donations.html#">Next</a>
                     </li>
                 </ul>
             </div>
@@ -395,7 +395,7 @@ export default function Page() {
         </div>
 
         <div class="donation-box">
-            <img src="/Apni-Bal-Sanskar-Pathshala/images/qr.jpeg" alt="UPI QR Code" style="max-width:300px; width:100%; border-radius:10px;">
+            <img src="/images/qr.jpeg" alt="UPI QR Code" style="max-width:300px; width:100%; border-radius:10px;">
 
             <h4 style="margin-top:15px;">UTHAN SEWA SANSTHAN</h4>
             <p><strong>UPI ID:</strong> uthan98286894@barodampay</p>
@@ -413,8 +413,8 @@ export default function Page() {
                 <div class="col-sm-6 col-lg-3">
                     <div class="footer-item">
                         <div class="footer-logo">
-                            <a class="logo" href="/Apni-Bal-Sanskar-Pathshala/">
-                                <img src="/Apni-Bal-Sanskar-Pathshala/images/logo.png" class="w-25" alt="Logo">
+                            <a class="logo" href="/">
+                                <img src="/images/logo.png" class="w-25" alt="Logo">
                             </a>
                             <p>We are committed to creating a positive impact by providing education, promoting health
                                 and wellness, protecting the environment, and supporting underprivileged communities.
@@ -449,7 +449,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">Education for Underprivileged Children</a>
+                                            <a href="/donations.html#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -459,7 +459,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#">Support Environmental Protection</a>
+                                            <a href="/donations.html#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -475,7 +475,7 @@ export default function Page() {
                             <h3>Quick links</h3>
                             <ul>
                                 <li>
-                                    <a href="/Apni-Bal-Sanskar-Pathshala/about">
+                                    <a href="/about">
                                         <i class="icofont-simple-right"></i>
                                         About
                                     </a>
@@ -500,7 +500,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -512,7 +512,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/Apni-Bal-Sanskar-Pathshala/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -701,20 +701,20 @@ export default function Page() {
 
 
     <!--=== Essential JS ===-->
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/bootstrap.bundle.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/form-validator.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/contact-form-script.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.meanmenu.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery-modal-video.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/wow.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/lightbox.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/owl.carousel.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/odometer.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.appear.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/jquery.nice-select.min.js"></script>
-    <script src="/Apni-Bal-Sanskar-Pathshala/js/custom.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/form-validator.min.js"></script>
+    <script src="/js/contact-form-script.js"></script>
+    <script src="/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/js/jquery.meanmenu.js"></script>
+    <script src="/js/jquery-modal-video.min.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/lightbox.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/odometer.min.js"></script>
+    <script src="/js/jquery.appear.min.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/custom.js"></script>
 
 ` }} />
   );

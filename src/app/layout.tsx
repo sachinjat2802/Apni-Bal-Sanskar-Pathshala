@@ -12,7 +12,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const basePath = "/Apni-Bal-Sanskar-Pathshala";
+  const basePath = "";
   return (
     <html lang="zxx">
       <head>
