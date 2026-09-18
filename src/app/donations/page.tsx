@@ -500,23 +500,11 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
-                                        <a href="tel:9828603138">9828603138</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9785488455">9785488455</a>
+                                        <a href="tel:9828603138">9828603138</a>, <a href="tel:9785488455">9785488455</a>
                                     </li>
                                 </ul>
                             </div>
