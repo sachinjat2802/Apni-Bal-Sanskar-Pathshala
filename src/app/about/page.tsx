@@ -1,887 +1,1089 @@
-
 export default function Page() {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
-                </div>
+    <>
+      {/* Preloader */}
+      <div className="loader">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="pre-box-one">
+              <div className="pre-box-two"></div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Preloader -->
+      </div>
+      {/* End Preloader */}
 
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                <a href="/about.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-call"></i>
-                                <a href="tel:9785488455">9785488455, 9828603138</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span><strong>Registration No.:</strong></span>
-                                <span class="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
-                            </li>
-                        </ul>
-
-                        <div class="header-search">
-                            <i id="search-btn" class="icofont-search-2"></i>
-                            <div id="search-overlay" class="block">
-                                <div class="centered">
-                                    <div id="search-box">
-                                        <i id="close-btn" class="icofont-close"></i>
-                                        <form>
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <button type="submit" class="btn">Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navbar-area sticky-top">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/images/logo.png" class="logo-two" alt="Logo">
+      <div className="header-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="left">
+                <ul>
+                  <li>
+                    <i className="icofont-location-pin"></i>
+                    <a href="/about.html#">
+                      31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.
                     </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
+                  </li>
+                  <li>
+                    <i className="icofont-ui-call"></i>
+                    <a href="tel:9785488455">9785488455, 9828603138</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                            </li>
+            <div className="col-lg-6">
+              <div className="right">
+                <ul className="list-unstyled">
+                  <li>
+                    <span>
+                      <strong>Registration No.:</strong>
+                    </span>
+                    <span className="text-white">
+                      ( रजि. COOP/2018 /JAIPUR /103636 )
+                    </span>
+                  </li>
+                </ul>
 
+                <div className="header-search">
+                  <i id="search-btn" className="icofont-search-2"></i>
+                  <div id="search-overlay" className="block">
+                    <div className="centered">
+                      <div id="search-box">
+                        <i id="close-btn" className="icofont-close"></i>
+                        <form>
+                          <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Search..."
+                          />
+                          <button type="submit" className="btn">
+                            Search
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                            <li class="nav-item">
-                                <a href="/about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/gallery" class="nav-link">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/about.html#" class="nav-link dropdown-toggle">Donations <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/donations" class="nav-link">Donations</a>
+      {/* Navbar */}
+      <div className="navbar-area sticky-top">
+        {/* Menu For Mobile Device */}
+        <div className="mobile-nav">
+          <a href="/" className="logo">
+            <img src="/images/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        {/* Menu For Desktop Device */}
+        <div className="main-nav">
+          <div className="container">
+            <nav className="navbar navbar-expand-md navbar-light">
+              <a className="navbar-brand" href="/">
+                <img src="/images/logo.png" className="logo-one" alt="Logo" />
+                <img src="/images/logo.png" className="logo-two" alt="Logo" />
+              </a>
+              <div
+                className="collapse navbar-collapse mean-menu"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <a href="/" className="nav-link dropdown-toggle active">
+                      Home{" "}
+                    </a>
+                  </li>
+
+                  <li className="nav-item">
+                    <a href="/about" className="nav-link">
+                      About
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="/gallery" className="nav-link">
+                      Gallery
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="/about.html#" className="nav-link dropdown-toggle">
+                      Donations <i className="icofont-simple-down"></i>
+                    </a>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <a href="/donations" className="nav-link">
+                          Donations
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a href="/about.html#" className="nav-link">
+                          Donation Details
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="nav-item">
+                    <a href="/our-document" className="nav-link">
+                      Documents
+                    </a>
+                  </li>
+                  {/* <li className="nav-item">
+                                <a href="#" className="nav-link dropdown-toggle">Blog <i
+                                        className="icofont-simple-down"></i></a>
+                                <ul className="dropdown-menu">
+                                    <li className="nav-item">
+                                        <a href="/blog" className="nav-link">Blog</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="/about.html#" class="nav-link">Donation Details</a>
+                                    <li className="nav-item">
+                                        <a href="/blog-details" className="nav-link">Blog Details</a>
                                     </li>
                                 </ul>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/our-document" class="nav-link">Documents</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Blog <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog-details" class="nav-link">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="/contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                         <div class="side-nav">
-                            <a class="donate-btn" href="/about.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
-                                Donate
-                                <i class="icofont-heart-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+                            </li> */}
+                  <li className="nav-item">
+                    <a href="/contact" className="nav-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+                <div className="side-nav">
+                  <a
+                    className="donate-btn"
+                    href="/about.html#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#donationModal"
+                  >
+                    Donate
+                    <i className="icofont-heart-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
-    </div>
-    <!-- End Navbar -->
+      </div>
+      {/* End Navbar */}
 
-
-
-
-    <!-- Page Title -->
-    <div class="page-title-area title-bg-one">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="container">
-                    <div class="title-item">
-                        <h2>About</h2>
-                        <ul>
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <span>About</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      {/* Page Title */}
+      <div className="page-title-area title-bg-one">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="container">
+              <div className="title-item">
+                <h2>About</h2>
+                <ul>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <span>About</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Page Title -->
+      </div>
+      {/* End Page Title */}
 
-    <!-- About -->
-    <div class="about-area two pt-100 pb-70">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <div class="section-title">
-                            <span class="sub-title">About us</span>
-                            <h2>We Work for Social Upliftment</h2>
-                        </div>
-                        <p>Utthan Seva Sansthan is dedicated to bringing positive change in society by working for
-                            education, health, environment, and social welfare. Our mission is to uplift underprivileged
-                            communities and create equal opportunities for growth and development. Through our
-                            continuous efforts, we aim to build a healthier, educated, and empowered society.</p>
-                        <ul>
-                            <li>
-                                <span>01</span>
-                                Providing education to underprivileged sections of society
-                            </li>
-                            <li>
-                                <span>02</span>
-                                Promoting yoga and healthy lifestyle practices
-                            </li>
-                            <li>
-                                <span>03</span>
-                                Working for environmental awareness and protection
-                            </li>
-                            <li>
-                                <span>04</span>
-                                Supporting and uplifting underprivileged girl children
-                            </li>
-                        </ul>
-                        <div class="about-btn-area">
-                            <a class="common-btn about-btn" href="/about.html#">Get Start A Fundraising</a>
-                            <a class="common-btn" href="/about.html#">Read More</a>
-                        </div>
-                    </div>
+      {/* About */}
+      <div className="about-area two pt-100 pb-70">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="about-content">
+                <div className="section-title">
+                  <span className="sub-title">About us</span>
+                  <h2>We Work for Social Upliftment</h2>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="/images/1.jpeg" alt="About">
-                        <div class="video-wrap">
-                            <button class="js-modal-btn" data-video-id="uemObN8_dcw">
-                                <i class="icofont-ui-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- End About -->
-
-    <!-- About -->
-    <div class="about-area two pt-100 pb-70">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <div class="about-img">
-                        <img src="/images/gallary-img/5.jpeg" alt="About">
-                        <div class="video-wrap">
-                            <button class="js-modal-btn" data-video-id="uemObN8_dcw">
-                                <i class="icofont-ui-play"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <div class="section-title">
-                            <span class="sub-title">Our Vision</span>
-                            <h2>Mission of Utthan Seva Sansthan</h2>
-                        </div>
-                        <p>
-                            In our country, governments have continuously made efforts to promote education, and free
-                            education facilities are widely available. Many private institutions are also contributing
-                            significantly to the education sector. Despite this, millions of children are still deprived
-                            of education. There are numerous slum areas, underprivileged communities, and nomadic
-                            families whose children lack access to proper education.
-                            To address this issue, Utthan Seva Sansthan operates free “Bal Sanskar Pathshalas” within
-                            slum areas, aiming to educate and nurture children with strong values and knowledge.
-                            Currently, the organization is active in limited areas of Jaipur due to limited resources.
-                            With the support of donors and well-wishers, the institution is committed to providing free
-                            education to more children. The organization has also applied for land allocation as per
-                            education department guidelines to develop proper infrastructure, including educational
-                            facilities and hostels, to provide skill-based and employment-oriented education to
-                            underprivileged sections of society.
-                            Alongside education, the organization is actively working on key initiatives such as
-                            environmental protection through tree plantation drives, promoting physical and mental
-                            well-being through free yoga classes, and organizing Kanya Pujan and other social programs
-                            to empower and uplift society.
-                        </p>
-
-
-
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div>
-    <!-- End About -->
-
-    <!--=== Team ===-->
-    <section class="team-area pb-70">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Our Team</span>
-                <h2>Meet Our Dedicated Team Members</h2>
-
                 <p>
-                    Our team includes dedicated educators and volunteers committed to empowering children
-                    and building a strong, value-driven society.
+                  Utthan Seva Sansthan is dedicated to bringing positive change
+                  in society by working for education, health, environment, and
+                  social welfare. Our mission is to uplift underprivileged
+                  communities and create equal opportunities for growth and
+                  development. Through our continuous efforts, we aim to build a
+                  healthier, educated, and empowered society.
                 </p>
-
+                <ul>
+                  <li>
+                    <span>01</span>
+                    Providing education to underprivileged sections of society
+                  </li>
+                  <li>
+                    <span>02</span>
+                    Promoting yoga and healthy lifestyle practices
+                  </li>
+                  <li>
+                    <span>03</span>
+                    Working for environmental awareness and protection
+                  </li>
+                  <li>
+                    <span>04</span>
+                    Supporting and uplifting underprivileged girl children
+                  </li>
+                </ul>
+                <div className="about-btn-area">
+                  <a className="common-btn about-btn" href="/about.html#">
+                    Get Start A Fundraising
+                  </a>
+                  <a className="common-btn" href="/about.html#">
+                    Read More
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="https://uthansevasansthan.com/images/our-team/founder.jpg" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Rakesh Matolia</h3>
-                            <span>Education Incharge</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="/images/our-team/main-img.jpeg" style="object-position: top;" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Sultan Singh</h3>
-                            <span>Cashier</span>
-                        </div>
-                    </div>
+            <div className="col-lg-6">
+              <div className="about-img">
+                <img src="/images/1.jpeg" alt="About" />
+                <div className="video-wrap">
+                  <button className="js-modal-btn" data-video-id="uemObN8_dcw">
+                    <i className="icofont-ui-play"></i>
+                  </button>
                 </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="/images/our-team/01.jpeg" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Sultan Singh</h3>
-                            <span>Treasurer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="/images/our-team/0.2.jpeg" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Shivanand Tripathi</h3>
-                            <span>Secretary</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="/images/our-team/0.3.jpeg" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Captain Shriram Chaudhary</h3>
-                            <span>President</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="team-item">
-                        <div class="top">
-                            <img src="/images/our-team/media-parbari.jpeg" alt="Team">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/share/14b4qT1pywL/" target="_blank" target="_blank">
-                                        <i class="icofont-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.twitter.com/" target="_blank">
-                                        <i class="icofont-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com/@apnibalsanskarpathshala" target="_blank" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala" target="_blank" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <h3>Arun Jangid</h3>
-                            <span>Media prabhari</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!--=== End Team ===-->
+      </div>
+      {/* End About */}
 
-
-
-    <!-- Benefit -->
-    <div class="benefit-area two pt-100 pb-70">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <div class="benefit-img">
-                        <img src="/images/gallary-img/10.jpeg" alt="Benefit">
-                        <!-- <img src="/assets/img/benefit-shape1.png" alt="Benefit"> -->
-                        <div class="video-wrap">
-                            <button class="js-modal-btn" data-video-id="uemObN8_dcw">
-                                <i class="icofont-ui-play"></i>
-                            </button>
-                        </div>
-                    </div>
+      {/* About */}
+      <div className="about-area two pt-100 pb-70">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="about-img">
+                <img src="/images/gallary-img/5.jpeg" alt="About" />
+                <div className="video-wrap">
+                  <button className="js-modal-btn" data-video-id="uemObN8_dcw">
+                    <i className="icofont-ui-play"></i>
+                  </button>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="section-title">
-                        <span class="sub-title">Core Initiatives</span>
-                        <h2>Our Mission to Create Positive Change</h2>
-                        <p>We are committed to uplifting society through education, health awareness, environmental
-                            care, and social support for underprivileged communities.</p>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-sm-6">
-                            <div class="benefit-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <h3>Education Support</h3>
-                                <p>Providing free education and learning resources to underprivileged children for a
-                                    brighter future.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="benefit-item two">
-                                <i class="fas fa-spa"></i>
-                                <h3>Yoga & Wellness</h3>
-                                <p>Promoting physical and mental well-being through free yoga sessions and health
-                                    awareness programs.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="benefit-item three">
-                                <i class="fas fa-leaf"></i>
-                                <h3>Environmental Care</h3>
-                                <p>Encouraging tree plantation and environmental awareness to build a greener and
-                                    healthier future.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <div class="benefit-item four">
-                                <i class="fas fa-child"></i>
-                                <h3>Girl Child Upliftment</h3>
-                                <p>Supporting underprivileged girls through social initiatives, education, and
-                                    empowerment programs.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- End Benefit -->
 
-
-
-
-    <!-- Footer -->
-    <footer class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo" href="/">
-                                <img src="/images/logo.png" class="w-25" alt="Logo">
-                            </a>
-                            <p>We are committed to creating a positive impact by providing education, promoting health
-                                and wellness, protecting the environment, and supporting underprivileged communities.
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
-                                        <i class="fa-brands fa-threads"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div className="col-lg-6">
+              <div className="about-content">
+                <div className="section-title">
+                  <span className="sub-title">Our Vision</span>
+                  <h2>Mission of Utthan Seva Sansthan</h2>
                 </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-causes">
-                            <h3>Urgent causes</h3>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/about.html#">Education for Underprivileged Children</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/about.html#">Support Environmental Protection</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-links">
-                            <h3>Quick links</h3>
-                            <ul>
-                                <li>
-                                    <a href="/about">
-                                        <i class="icofont-simple-right"></i>
-                                        About
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://uthansevasansthan.com/donation.html">
-                                        <i class="icofont-simple-right"></i>
-                                        Donation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-contact">
-                            <h3>Contact info</h3>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/about.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9828603138">9828603138</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/about.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9785488455">9785488455</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="copyright-area">
-                <p>Copyright @
-                    <script>document.write(new Date().getFullYear())</script> Uthan seva sansthan. </a>
+                <p>
+                  In our country, governments have continuously made efforts to
+                  promote education, and free education facilities are widely
+                  available. Many private institutions are also contributing
+                  significantly to the education sector. Despite this, millions
+                  of children are still deprived of education. There are
+                  numerous slum areas, underprivileged communities, and nomadic
+                  families whose children lack access to proper education. To
+                  address this issue, Utthan Seva Sansthan operates free “Bal
+                  Sanskar Pathshalas” within slum areas, aiming to educate and
+                  nurture children with strong values and knowledge. Currently,
+                  the organization is active in limited areas of Jaipur due to
+                  limited resources. With the support of donors and
+                  well-wishers, the institution is committed to providing free
+                  education to more children. The organization has also applied
+                  for land allocation as per education department guidelines to
+                  develop proper infrastructure, including educational
+                  facilities and hostels, to provide skill-based and
+                  employment-oriented education to underprivileged sections of
+                  society. Alongside education, the organization is actively
+                  working on key initiatives such as environmental protection
+                  through tree plantation drives, promoting physical and mental
+                  well-being through free yoga classes, and organizing Kanya
+                  Pujan and other social programs to empower and uplift society.
                 </p>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+      </div>
+      {/* End About */}
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919828603138" target="_blank" class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+      {/*=== Team ===*/}
+      <section className="team-area pb-70">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title">Our Team</span>
+            <h2>Meet Our Dedicated Team Members</h2>
 
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
+            <p>
+              Our team includes dedicated educators and volunteers committed to
+              empowering children and building a strong, value-driven society.
+            </p>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img
+                    src="https://uthansevasansthan.com/images/our-team/founder.jpg"
+                    alt="Team"
+                  />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
 
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
 
-                <div class="modal-body p-4">
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
 
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
 
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
+                <div className="bottom">
+                  <h3>Rakesh Matolia</h3>
+                  <span>Education Incharge</span>
                 </div>
+              </div>
             </div>
+
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img
+                    src="/images/our-team/main-img.jpeg"
+                    style={{ objectPosition: "top" }}
+                    alt="Team"
+                  />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
+
+
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bottom">
+                  <h3>Sultan Singh</h3>
+                  <span>Cashier</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img src="/images/our-team/01.jpeg" alt="Team" />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
+
+
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bottom">
+                  <h3>Sultan Singh</h3>
+                  <span>Treasurer</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img src="/images/our-team/0.2.jpeg" alt="Team" />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
+
+
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bottom">
+                  <h3>Shivanand Tripathi</h3>
+                  <span>Secretary</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img src="/images/our-team/0.3.jpeg" alt="Team" />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
+
+
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bottom">
+                  <h3>Captain Shriram Chaudhary</h3>
+                  <span>President</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-4">
+              <div className="team-item">
+                <div className="top">
+                  <img src="/images/our-team/media-parbari.jpeg" alt="Team" />
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/share/14b4qT1pywL/"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.twitter.com/" >
+                        <i className="icofont-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/@apnibalsanskarpathshala"
+                        target="_blank"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala"
+
+
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="bottom">
+                  <h3>Arun Jangid</h3>
+                  <span>Media prabhari</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </section>
+      {/*=== End Team ===*/}
 
-    <!-- Go Top -->
-    <div class="go-top">
-        <i class="icofont-arrow-up"></i>
-        <i class="icofont-arrow-up"></i>
-    </div>
-    <!-- End Go Top -->
+      {/* Benefit */}
+      <div className="benefit-area two pt-100 pb-70">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="benefit-img">
+                <img src="/images/gallary-img/10.jpeg" alt="Benefit" />
+                {/* <img src="/assets/img/benefit-shape1.png" alt="Benefit" /> */}
+                <div className="video-wrap">
+                  <button className="js-modal-btn" data-video-id="uemObN8_dcw">
+                    <i className="icofont-ui-play"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div className="col-lg-6">
+              <div className="section-title">
+                <span className="sub-title">Core Initiatives</span>
+                <h2>Our Mission to Create Positive Change</h2>
+                <p>
+                  We are committed to uplifting society through education,
+                  health awareness, environmental care, and social support for
+                  underprivileged communities.
+                </p>
+              </div>
 
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="benefit-item">
+                    <i className="fas fa-graduation-cap"></i>
+                    <h3>Education Support</h3>
+                    <p>
+                      Providing free education and learning resources to
+                      underprivileged children for a brighter future.
+                    </p>
+                  </div>
+                </div>
 
-` }} />
+                <div className="col-sm-6">
+                  <div className="benefit-item two">
+                    <i className="fas fa-spa"></i>
+                    <h3>Yoga & Wellness</h3>
+                    <p>
+                      Promoting physical and mental well-being through free yoga
+                      sessions and health awareness programs.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-sm-6">
+                  <div className="benefit-item three">
+                    <i className="fas fa-leaf"></i>
+                    <h3>Environmental Care</h3>
+                    <p>
+                      Encouraging tree plantation and environmental awareness to
+                      build a greener and healthier future.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="col-sm-6">
+                  <div className="benefit-item four">
+                    <i className="fas fa-child"></i>
+                    <h3>Girl Child Upliftment</h3>
+                    <p>
+                      Supporting underprivileged girls through social
+                      initiatives, education, and empowerment programs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Benefit */}
+
+      {/* Footer */}
+      <footer className="footer-area pt-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-logo">
+                  <a className="logo" href="/">
+                    <img src="/images/logo.png" className="w-25" alt="Logo" />
+                  </a>
+                  <p>
+                    We are committed to creating a positive impact by providing
+                    education, promoting health and wellness, protecting the
+                    environment, and supporting underprivileged communities.
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://www.threads.net/@apnibalsanskarphatsala"
+                        target="_blank"
+                      >
+                        <i className="fa-brands fa-threads"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@ApnibalSanskarpathshala"
+
+                      >
+                        <i className="icofont-youtube-play"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/apnibalsanskarphatsala/"
+                        target="_blank"
+                      >
+                        <i className="icofont-instagram"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-causes">
+                  <h3>Urgent causes</h3>
+
+                  <div className="cause-inner">
+                    <ul className="align-items-center">
+                      <li>
+                        <h3>
+                          <a href="/about.html#">
+                            Education for Underprivileged Children
+                          </a>
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="cause-inner">
+                    <ul className="align-items-center">
+                      <li>
+                        <h3>
+                          <a href="/about.html#">
+                            Support Environmental Protection
+                          </a>
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-links">
+                  <h3>Quick links</h3>
+                  <ul>
+                    <li>
+                      <a href="/about">
+                        <i className="icofont-simple-right"></i>
+                        About
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="https://uthansevasansthan.com/donation.html">
+                        <i className="icofont-simple-right"></i>
+                        Donation
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-contact">
+                  <h3>Contact info</h3>
+                  <div className="contact-inner">
+                    <ul>
+                      <li>
+                        <i className="icofont-location-pin"></i>
+                        <a href="/about.html#">
+                          {" "}
+                          31, Green Park Extension, Nangal Jaisa Bohra, Jaipur
+                        </a>
+                      </li>
+                      <li>
+                        <i className="icofont-ui-call"></i>
+                        <a href="tel:9828603138">9828603138</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="contact-inner">
+                    <ul>
+                      <li>
+                        <i className="icofont-location-pin"></i>
+                        <a href="/about.html#">
+                          {" "}
+                          31, Green Park Extension, Nangal Jaisa Bohra, Jaipur
+                        </a>
+                      </li>
+                      <li>
+                        <i className="icofont-ui-call"></i>
+                        <a href="tel:9785488455">9785488455</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="copyright-area">
+            <p>Copyright @ {new Date().getFullYear()} Uthan seva sansthan.</p>
+          </div>
+        </div>
+      </footer>
+      {/* End Footer */}
+
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/919828603138"
+
+        className="whatsapp-btn"
+      >
+        <i className="fa-brands fa-whatsapp"></i>
+      </a>
+
+      {/* Modal */}
+      <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            {/* Close */}
+            <button
+              type="button"
+              className="btn-close position-absolute top-0 end-0 z-1 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+
+            <div className="modal-body p-4">
+              {/* Title */}
+              <h4 className="text-warning fw-bold">Your Donation</h4>
+              <input
+                type="text"
+                className="form-control mb-3"
+                placeholder="Enter Donation Amount"
+              />
+
+              {/* Details */}
+              <h5 className="text-warning fw-bold">Details</h5>
+
+              <div className="row g-3 mb-3">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Address"
+                  />
+                </div>
+              </div>
+
+              <textarea
+                className="form-control mb-3"
+                rows={3}
+                placeholder="Message"
+              ></textarea>
+
+              {/* Payment */}
+              <h5 className="text-warning fw-bold">
+                Choose Your Payment Method
+              </h5>
+
+              <div className="mb-3">
+                <input type="radio" defaultChecked /> Payment By Card
+                <input type="radio" className="ms-3" /> Offline Donation
+              </div>
+
+              {/* Cards */}
+              <div className="d-flex gap-3 mb-3">
+                <img src="https://img.icons8.com/color/48/visa.png" />
+                <img src="https://img.icons8.com/color/48/mastercard.png" />
+                <img src="https://img.icons8.com/color/48/paypal.png" />
+              </div>
+
+              {/* Card Details */}
+              <div className="row g-3">
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Card holder Name"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Card Number"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="CVV"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Expire Date"
+                  />
+                </div>
+              </div>
+
+              {/* Button */}
+              <div className="text-center mt-4">
+                <button className="btn btn-outline-success px-4">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal */}
+      <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            {/* Close */}
+            <button
+              type="button"
+              className="btn-close position-absolute top-0 end-0 z-1 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+
+            <div className="modal-body p-4">
+              {/* Title */}
+              <h4 className="text-warning fw-bold">Your Donation</h4>
+              <input
+                type="text"
+                className="form-control mb-3"
+                placeholder="Enter Donation Amount"
+              />
+
+              {/* Details */}
+              <h5 className="text-warning fw-bold">Details</h5>
+
+              <div className="row g-3 mb-3">
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Address"
+                  />
+                </div>
+              </div>
+
+              <textarea
+                className="form-control mb-3"
+                rows={3}
+                placeholder="Message"
+              ></textarea>
+
+              {/* Payment */}
+              <h5 className="text-warning fw-bold">
+                Choose Your Payment Method
+              </h5>
+
+              <div className="mb-3">
+                <input type="radio" defaultChecked /> Payment By Card
+                <input type="radio" className="ms-3" /> Offline Donation
+              </div>
+
+              {/* Cards */}
+              <div className="d-flex gap-3 mb-3">
+                <img src="https://img.icons8.com/color/48/visa.png" />
+                <img src="https://img.icons8.com/color/48/mastercard.png" />
+                <img src="https://img.icons8.com/color/48/paypal.png" />
+              </div>
+
+              {/* Card Details */}
+              <div className="row g-3">
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Card holder Name"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Card Number"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="CVV"
+                  />
+                </div>
+                <div className="col-md-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Expire Date"
+                  />
+                </div>
+              </div>
+
+              {/* Button */}
+              <div className="text-center mt-4">
+                <button className="btn btn-outline-success px-4">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Go Top */}
+      <div className="go-top">
+        <i className="icofont-arrow-up"></i>
+        <i className="icofont-arrow-up"></i>
+      </div>
+      {/* End Go Top */}
+
+      {/*=== Essential JS ===*/}
+    </>
   );
 }
