@@ -1,0 +1,190 @@
+npm warn exec The following package was not found and will be installed: serve@14.2.6
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /gallery
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 384 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/3x75_z6bu1mv2.css
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/bootstrap.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/icofont.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/meanmenu.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/modal-video.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/flaticon.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/animate.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 24 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 24 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 23 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 23 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 23 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 24 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/lightbox.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/owl.carousel.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/owl.theme.default.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/odometer.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/nice-select.min.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/style-1.css
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 13 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 11 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 11 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 13 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 13 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 12 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/responsive-1.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /css/theme-dark.css
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/2lh07t96no3e0.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/logo.png
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/1.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 7 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 10 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 10 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 9 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 7 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 8 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/2.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/bootstrap.bundle.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/form-validator.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/contact-form-script.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery.ajaxchimp.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery.meanmenu.js
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery-modal-video.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/wow.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/lightbox.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/owl.carousel.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/odometer.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery.appear.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/jquery.nice-select.min.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /js/custom.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/17c2xufnf7-1b.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/2ncdmtj91g36a.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/turbopack-02bnclu06j80h.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/1eozo9xfs-h7u.js
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 3 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 7 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 9 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /_next/static/chunks/14mumt5_n0xhi.js
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/3.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/4.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/5.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 200 in 25 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 GET /images/gallary-img/6.jpeg
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 17 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 16 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 16 ms
+ HTTP  9/18/2026 4:26:30 PM ::1 Returned 404 in 8 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/7.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/8.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/9.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/10.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/11.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/13.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/15.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/16.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/17.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/18.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/19.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/20.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/22.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 2 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/23.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/24.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/25.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/26.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/27.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/28.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 2 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/29.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/30.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/31.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/32.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/33.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/34.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/35.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/36.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/37.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/38.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/39.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/40.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/41.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/42.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/43.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/44.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /images/gallary-img/45.jpeg
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 2 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 3 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 1 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/bootstrap.bundle.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/form-validator.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/contact-form-script.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 16 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery.ajaxchimp.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery.meanmenu.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery-modal-video.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 19 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 19 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/wow.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 24 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 24 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 23 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 16 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/lightbox.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 2 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/owl.carousel.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/odometer.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery.appear.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/jquery.nice-select.min.js
+ HTTP  9/18/2026 4:26:31 PM ::1 GET /js/custom.js
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 8 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 7 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 6 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 4 ms
+ HTTP  9/18/2026 4:26:31 PM ::1 Returned 404 in 5 ms
+
+ INFO  Gracefully shutting down. Please wait...
