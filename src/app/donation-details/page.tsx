@@ -23,7 +23,7 @@ export default function Page() {
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="/donation-details.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/donation-details#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -95,14 +95,14 @@ export default function Page() {
                                 <a href="/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/donation-details.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/donation-details#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/donation-details.html#" class="nav-link">Donation Details</a>
+                                        <a href="/donation-details#" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -128,7 +128,7 @@ export default function Page() {
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="/donation-details.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/donation-details#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -229,22 +229,22 @@ export default function Page() {
                                                 <span>Share:</span>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/donation-details#" target="_blank">
                                                     <i class="icofont-facebook"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/donation-details#" target="_blank">
                                                     <i class="icofont-twitter"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/donation-details#" target="_blank">
                                                     <i class="icofont-youtube-play"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/donation-details#" target="_blank">
                                                     <i class="icofont-instagram"></i>
                                                 </a>
                                             </li>
@@ -259,13 +259,13 @@ export default function Page() {
                                                 <span>Tags:</span>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Donation</a>
+                                                <a href="/donation-details#">#Donation</a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Food</a>
+                                                <a href="/donation-details#">#Food</a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Help</a>
+                                                <a href="/donation-details#">#Help</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -361,9 +361,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Donate for nutrition less poor people</a>
+                                            <a href="/donation-details#">Donate for nutrition less poor people</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/donation-details#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -374,9 +374,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Charity meetup in Berlin next year</a>
+                                            <a href="/donation-details#">Charity meetup in Berlin next year</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/donation-details#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -387,9 +387,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Donate for poor people for food & water</a>
+                                            <a href="/donation-details#">Donate for poor people for food & water</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/donation-details#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -400,9 +400,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Little Sanjana joined in a charity to help people</a>
+                                            <a href="/donation-details#">Little Sanjana joined in a charity to help people</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/donation-details#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -412,16 +412,16 @@ export default function Page() {
                             <h3>Archives</h3>
                             <ul>
                                 <li>
-                                    <a href="/donation-details.html#">January 2024</a>
+                                    <a href="/donation-details#">January 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">May 2024</a>
+                                    <a href="/donation-details#">May 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">April 2024</a>
+                                    <a href="/donation-details#">April 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">June 2024</a>
+                                    <a href="/donation-details#">June 2024</a>
                                 </li>
                             </ul>
                         </div>
@@ -430,19 +430,19 @@ export default function Page() {
                             <h3>Categories</h3>
                             <ul>
                                 <li>
-                                    <a href="/donation-details.html#">Education (10)</a>
+                                    <a href="/donation-details#">Education (10)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Medical (25)</a>
+                                    <a href="/donation-details#">Medical (25)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Food & Water (14)</a>
+                                    <a href="/donation-details#">Food & Water (14)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">National Charity (2)</a>
+                                    <a href="/donation-details#">National Charity (2)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Cloth (4)</a>
+                                    <a href="/donation-details#">Cloth (4)</a>
                                 </li>
                             </ul>
                         </div>
@@ -502,7 +502,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/donation-details.html#">Education for Underprivileged Children</a>
+                                            <a href="/donation-details#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -512,7 +512,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/donation-details.html#">Support Environmental Protection</a>
+                                            <a href="/donation-details#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -553,7 +553,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donation-details#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -565,7 +565,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donation-details#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
