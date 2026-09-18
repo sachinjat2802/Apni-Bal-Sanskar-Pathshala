@@ -866,22 +866,6 @@ export default function Page() {
     <!-- End Go Top -->
 
 
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
-
 ` }} />
   );
 }
