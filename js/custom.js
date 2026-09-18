@@ -131,6 +131,7 @@ jQuery(function ($) {
 
 	// Timer JS
 	let getDaysId = document.getElementById('days');
+	let timerInterval;
 	if(getDaysId !== null){
 
 		const second = 1000;
@@ -139,14 +140,24 @@ jQuery(function ($) {
 		const day = hour * 24;
 
 		let countDown = new Date('December 25, 2030 00:00:00').getTime();
-		setInterval(function() {
+		timerInterval = setInterval(function() {
+			let daysElem = document.getElementById('days');
+			let hoursElem = document.getElementById('hours');
+			let minutesElem = document.getElementById('minutes');
+			let secondsElem = document.getElementById('seconds');
+
+			if (daysElem === null || hoursElem === null || minutesElem === null || secondsElem === null) {
+				clearInterval(timerInterval);
+				return;
+			}
+
 			let now = new Date().getTime();
 			let distance = countDown - now;
 
-			document.getElementById('days').innerText = Math.floor(distance / (day)),
-			document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-			document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-			document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+			daysElem.innerText = Math.floor(distance / (day)),
+			hoursElem.innerText = Math.floor((distance % (day)) / (hour)),
+			minutesElem.innerText = Math.floor((distance % (hour)) / (minute)),
+			secondsElem.innerText = Math.floor((distance % (minute)) / second);
 		}, second);
 	};
 
