@@ -43,9 +43,7 @@ jQuery(function ($) {
 		'positionFromTop': 120,
     });
 
-    // Preloader JS
 	jQuery(window).on('load', function(){
-		jQuery('.loader').fadeOut(500);
 	});
 
 	// Banner Slider JS
