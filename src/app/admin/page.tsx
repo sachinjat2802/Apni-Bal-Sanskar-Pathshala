@@ -1,4 +1,3 @@
-
 export default function Page() {
   return (
     <div dangerouslySetInnerHTML={{ __html: `
@@ -31,15 +30,32 @@ export default function Page() {
     </div>
 
     <script>
-        function login() {
+        async function login() {
             const u = document.getElementById('username').value;
             const p = document.getElementById('password').value;
 
-            // Hardcoded fallback logic since backend won't work on GitHub Pages
-            if(u === 'admin' && p === 'password') {
-                document.getElementById('login-container').classList.add('hidden');
-                document.getElementById('dashboard-container').classList.remove('hidden');
-            } else {
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username: u, password: p }),
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        document.getElementById('login-container').classList.add('hidden');
+                        document.getElementById('dashboard-container').classList.remove('hidden');
+                        document.getElementById('error-msg').classList.add('hidden');
+                        return;
+                    }
+                }
+
+                document.getElementById('error-msg').classList.remove('hidden');
+            } catch (error) {
+                console.error('Login error:', error);
                 document.getElementById('error-msg').classList.remove('hidden');
             }
         }
