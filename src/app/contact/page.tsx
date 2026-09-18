@@ -2,17 +2,6 @@
 export default function Page() {
   return (
     <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Preloader -->
 
     <div class="header-area">
         <div class="container">
