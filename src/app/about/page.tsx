@@ -23,7 +23,7 @@ export default function Page() {
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="/about.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/about#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -95,14 +95,14 @@ export default function Page() {
                                 <a href="/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/about.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/about#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="/donations" class="nav-link">Donations</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="/about.html#" class="nav-link">Donation Details</a>
+                                        <a href="/about#" class="nav-link">Donation Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -128,7 +128,7 @@ export default function Page() {
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="/about.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/about#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -199,8 +199,8 @@ export default function Page() {
                             </li>
                         </ul>
                         <div class="about-btn-area">
-                            <a class="common-btn about-btn" href="/about.html#">Get Start A Fundraising</a>
-                            <a class="common-btn" href="/about.html#">Read More</a>
+                            <a class="common-btn about-btn" href="/about#">Get Start A Fundraising</a>
+                            <a class="common-btn" href="/about#">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -615,7 +615,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/about.html#">Education for Underprivileged Children</a>
+                                            <a href="/about#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -625,7 +625,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/about.html#">Support Environmental Protection</a>
+                                            <a href="/about#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -666,7 +666,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/about.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/about#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -678,7 +678,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/about.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/about#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>

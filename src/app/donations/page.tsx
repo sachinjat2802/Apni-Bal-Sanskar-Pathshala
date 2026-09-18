@@ -23,7 +23,7 @@ export default function Page() {
                         <ul>
                             <li>
                                 <i class="icofont-location-pin"></i>
-                                <a href="/donations.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <a href="/donations#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -98,7 +98,7 @@ export default function Page() {
                                 <a href="/gallery" class="nav-link">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="/donations.html#" class="nav-link dropdown-toggle">Donations <i
+                                <a href="/donations#" class="nav-link dropdown-toggle">Donations <i
                                         class="icofont-simple-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -131,7 +131,7 @@ export default function Page() {
                             </li>
                         </ul>
                          <div class="side-nav">
-                            <a class="donate-btn" href="/donations.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                            <a class="donate-btn" href="/donations#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i class="icofont-heart-alt"></i>
                             </a>
@@ -179,7 +179,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Medical</a>
+                                <a class="tags" href="/donations#">#Medical</a>
                                 <h3>
                                     <a href="/donation-details">Need help for treatment</a>
                                 </h3>
@@ -211,7 +211,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Education</a>
+                                <a class="tags" href="/donations#">#Education</a>
                                 <h3>
                                     <a href="/donation-details">Education for poor children</a>
                                 </h3>
@@ -243,7 +243,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Family</a>
+                                <a class="tags" href="/donations#">#Family</a>
                                 <h3>
                                     <a href="/donation-details">Financial help for poor</a>
                                 </h3>
@@ -275,7 +275,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Funding</a>
+                                <a class="tags" href="/donations#">#Funding</a>
                                 <h3>
                                     <a href="/donation-details">Funding for family</a>
                                 </h3>
@@ -307,7 +307,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Relief</a>
+                                <a class="tags" href="/donations#">#Relief</a>
                                 <h3>
                                     <a href="/donation-details">Relief for cyclone-affected</a>
                                 </h3>
@@ -339,7 +339,7 @@ export default function Page() {
                         </div>
                         <div class="inner">
                             <div class="top">
-                                <a class="tags" href="/donations.html#">#Drought</a>
+                                <a class="tags" href="/donations#">#Drought</a>
                                 <h3>
                                     <a href="/donation-details">Relief for drought-affected</a>
                                 </h3>
@@ -367,19 +367,19 @@ export default function Page() {
             <div class="pagination-area">
                 <ul>
                     <li>
-                        <a href="/donations.html#">Prev</a>
+                        <a href="/donations#">Prev</a>
                     </li>
                     <li>
-                        <a class="active" href="/donations.html#">1</a>
+                        <a class="active" href="/donations#">1</a>
                     </li>
                     <li>
-                        <a href="/donations.html#">2</a>
+                        <a href="/donations#">2</a>
                     </li>
                     <li>
-                        <a href="/donations.html#">3</a>
+                        <a href="/donations#">3</a>
                     </li>
                     <li>
-                        <a href="/donations.html#">Next</a>
+                        <a href="/donations#">Next</a>
                     </li>
                 </ul>
             </div>
@@ -449,7 +449,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/donations.html#">Education for Underprivileged Children</a>
+                                            <a href="/donations#">Education for Underprivileged Children</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -459,7 +459,7 @@ export default function Page() {
                                 <ul class="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/donations.html#">Support Environmental Protection</a>
+                                            <a href="/donations#">Support Environmental Protection</a>
                                         </h3>
                                     </li>
                                 </ul>
@@ -500,7 +500,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donations#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
@@ -512,7 +512,7 @@ export default function Page() {
                                 <ul>
                                     <li>
                                         <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <a href="/donations#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
                                     </li>
                                     <li>
                                         <i class="icofont-ui-call"></i>
