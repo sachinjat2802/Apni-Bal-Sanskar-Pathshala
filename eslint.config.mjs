@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Added based on memory to ignore legacy js/css
+    "js/**",
+    "css/**",
   ]),
 ]);
 
