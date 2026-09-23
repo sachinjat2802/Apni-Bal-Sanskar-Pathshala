@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "Uthan seva sansthan",
@@ -36,6 +38,8 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href={`${basePath}/images/logo.png`} />
       </head>
       <body>
+        <Header />
+        <Navbar />
         {children}
 
         {/* Global Scripts */}
