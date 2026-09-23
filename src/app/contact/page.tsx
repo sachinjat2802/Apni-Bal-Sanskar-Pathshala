@@ -1,56 +1,58 @@
+import Link from 'next/link';
 
 export default function Page() {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
+    <>
+
+    {/*  Preloader  */}
+    <div className="loader">
+        <div className="d-table">
+            <div className="d-table-cell">
+                <div className="pre-box-one">
+                    <div className="pre-box-two"></div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Preloader -->
+    {/*  End Preloader  */}
 
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
+    <div className="header-area">
+        <div className="container">
+            <div className="row">
 
-                <div class="col-lg-6">
-                    <div class="left">
+                <div className="col-lg-6">
+                    <div className="left">
                         <ul>
                             <li>
-                                <i class="icofont-location-pin"></i>
-                                <a href="/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                                <i className="icofont-location-pin"></i>
+                                <Link href="/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</Link>
                             </li>
                             <li>
-                                <i class="icofont-ui-call"></i>
+                                <i className="icofont-ui-call"></i>
                                 <a href="tel:9785488455">9785488455, 9828603138</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    <div class="right">
-                        <ul class="list-unstyled">
+                <div className="col-lg-6">
+                    <div className="right">
+                        <ul className="list-unstyled">
                             <li>
                                 <span><strong>Registration No.:</strong></span>
-                                <span class="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
+                                <span className="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
                             </li>
                         </ul>
 
-                        <div class="header-search">
-                            <i id="search-btn" class="icofont-search-2"></i>
-                            <div id="search-overlay" class="block">
-                                <div class="centered">
+                        <div className="header-search">
+                            <i id="search-btn" className="icofont-search-2"></i>
+                            <div id="search-overlay" className="block">
+                                <div className="centered">
                                     <div id="search-box">
-                                        <i id="close-btn" class="icofont-close"></i>
+                                        <i id="close-btn" className="icofont-close"></i>
                                         <form>
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <button type="submit" class="btn">Search</button>
+                                            <input type="text" className="form-control" placeholder="Search..." />
+                                            <button type="submit" className="btn">Search</button>
                                         </form>
                                     </div>
                                 </div>
@@ -63,94 +65,94 @@ export default function Page() {
         </div>
     </div>
 
-    <!-- Navbar -->
-    <div class="navbar-area sticky-top">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
+    {/*  Navbar  */}
+    <div className="navbar-area sticky-top">
+        {/*  Menu For Mobile Device  */}
+        <div className="mobile-nav">
+            <Link href="/" className="logo">
+                <img src="/images/logo.png" alt="Logo" />
+            </Link>
         </div>
 
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/images/logo.png" class="logo-two" alt="Logo">
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
+        {/*  Menu For Desktop Device  */}
+        <div className="main-nav">
+            <div className="container">
+                <nav className="navbar navbar-expand-md navbar-light">
+                    <Link className="navbar-brand" href="/">
+                        <img src="/images/logo.png" className="logo-one" alt="Logo" />
+                        <img src="/images/logo.png" className="logo-two" alt="Logo" />
+                    </Link>
+                    <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link href="/" className="nav-link dropdown-toggle active">Home </Link>
 
                             </li>
 
 
-                            <li class="nav-item">
-                                <a href="/about" class="nav-link">About</a>
+                            <li className="nav-item">
+                                <Link href="/about" className="nav-link">About</Link>
                             </li>
-                            <li class="nav-item">
-                                <a href="/gallery" class="nav-link">Gallery</a>
+                            <li className="nav-item">
+                                <Link href="/gallery" className="nav-link">Gallery</Link>
                             </li>
-                            <li class="nav-item">
-                                <a href="/contact.html#" class="nav-link dropdown-toggle">Donations <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/donations" class="nav-link">Donations</a>
+                            <li className="nav-item">
+                                <Link href="/contact.html#" className="nav-link dropdown-toggle">Donations <i
+                                        className="icofont-simple-down"></i></Link>
+                                <ul className="dropdown-menu">
+                                    <li className="nav-item">
+                                        <Link href="/donations" className="nav-link">Donations</Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="/contact.html#" class="nav-link">Donation Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/our-document" class="nav-link">Documents</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Blog <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog-details" class="nav-link">Blog Details</a>
+                                    <li className="nav-item">
+                                        <Link href="/contact.html#" className="nav-link">Donation Details</Link>
                                     </li>
                                 </ul>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="/contact" class="nav-link">Contact</a>
+                            </li>
+
+
+                            <li className="nav-item">
+                                <Link href="/our-document" className="nav-link">Documents</Link>
+                            </li>
+                            {/*  <li className="nav-item">
+                                <a href="#" className="nav-link dropdown-toggle">Blog <i
+                                        className="icofont-simple-down"></i></a>
+                                <ul className="dropdown-menu">
+                                    <li className="nav-item">
+                                        <Link href="/blog" className="nav-link">Blog</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link href="/blog-details" className="nav-link">Blog Details</Link>
+                                    </li>
+                                </ul>
+                            </li>  */}
+                            <li className="nav-item">
+                                <Link href="/contact" className="nav-link">Contact</Link>
                             </li>
                         </ul>
-                         <div class="side-nav">
-                            <a class="donate-btn" href="/contact.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                         <div className="side-nav">
+                            <Link className="donate-btn" href="/contact.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
-                                <i class="icofont-heart-alt"></i>
-                            </a>
+                                <i className="icofont-heart-alt"></i>
+                            </Link>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
-    <!-- End Navbar -->
+    {/*  End Navbar  */}
 
 
-    <!-- Page Title -->
-    <div class="page-title-area title-bg-eight">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="container">
-                    <div class="title-item">
+    {/*  Page Title  */}
+    <div className="page-title-area title-bg-eight">
+        <div className="d-table">
+            <div className="d-table-cell">
+                <div className="container">
+                    <div className="title-item">
                         <h2>Contact</h2>
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
                                 <span>Contact</span>
@@ -161,33 +163,33 @@ export default function Page() {
             </div>
         </div>
     </div>
-    <!-- End Page Title -->
+    {/*  End Page Title  */}
 
-    <!--=== Contact Info ===-->
-    <div class="contact-info-area pt-100 pb-70">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-6 col-lg-4">
-                    <div class="contact-info">
-                        <i class="icofont-location-pin"></i>
+    {/* === Contact Info === */}
+    <div className="contact-info-area pt-100 pb-70">
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col-sm-6 col-lg-4">
+                    <div className="contact-info">
+                        <i className="icofont-location-pin"></i>
                         <span>Location:</span>
-                        <a href="/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
+                        <Link href="/contact.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</Link>
 
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-4">
-                    <div class="contact-info">
-                        <i class="icofont-ui-call"></i>
+                <div className="col-sm-6 col-lg-4">
+                    <div className="contact-info">
+                        <i className="icofont-ui-call"></i>
                         <span>Phone:</span>
                         <a href="tel:9828603138">982-860-3138</a>
                         <a href="tel: 9785488455"> 978-548-8455</a>
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-4">
-                    <div class="contact-info">
-                        <i class="icofont-ui-email"></i>
+                <div className="col-sm-6 col-lg-4">
+                    <div className="contact-info">
+                        <i className="icofont-ui-email"></i>
                         <span>Email:</span>
                         <a href="mailto:apni.bal.sanskarpathshala1@gmail.com">apni.bal.sanskarpathshala1@gmail.com</a>
 
@@ -196,96 +198,96 @@ export default function Page() {
             </div>
         </div>
     </div>
-    <!--=== End Contact Info ===-->
+    {/* === End Contact Info === */}
 
-    <!-- Contact -->
-    <div class="contact-area pb-70">
-        <div class="container">
+    {/*  Contact  */}
+    <div className="contact-area pb-70">
+        <div className="container">
 
             <form id="contactForm">
-                <h2>Let's talk...!</h2>
+                <h2>Let&apos;s talk...!</h2>
                 <p>
                     Uttan Seva Sansthan is dedicated to serving society by supporting underprivileged communities
                     and promoting a better quality of life. Our organization works continuously to provide
                     essential services such as education, healthcare, food, and social awareness programs.
                 </p>
-                <div class="row">
+                <div className="row">
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
+                    <div className="col-lg-6">
+                        <div className="form-group">
                             <label>
-                                <i class="icofont-user-alt-3"></i>
+                                <i className="icofont-user-alt-3"></i>
                             </label>
-                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required=""
-                                data-error="Please enter your name">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="name" id="name" className="form-control" placeholder="Name" required
+                                data-error="Please enter your name" />
+                            <div className="help-block with-errors"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
+                    <div className="col-lg-6">
+                        <div className="form-group">
                             <label>
-                                <i class="icofont-ui-email"></i>
+                                <i className="icofont-ui-email"></i>
                             </label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Email"
-                                required="" data-error="Please enter your email">
-                            <div class="help-block with-errors"></div>
+                            <input type="email" name="email" id="email" className="form-control" placeholder="Email"
+                                required data-error="Please enter your email" />
+                            <div className="help-block with-errors"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
+                    <div className="col-lg-6">
+                        <div className="form-group">
                             <label>
-                                <i class="icofont-ui-call"></i>
+                                <i className="icofont-ui-call"></i>
                             </label>
-                            <input type="text" name="phone_number" id="phone_number" placeholder="Phone" required=""
-                                data-error="Please enter your number" class="form-control">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="phone_number" id="phone_number" placeholder="Phone" required
+                                data-error="Please enter your number" className="form-control" />
+                            <div className="help-block with-errors"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="form-group">
+                    <div className="col-lg-6">
+                        <div className="form-group">
                             <label>
-                                <i class="icofont-notepad"></i>
+                                <i className="icofont-notepad"></i>
                             </label>
-                            <input type="text" name="msg_subject" id="msg_subject" class="form-control"
-                                placeholder="Subject" required="" data-error="Please enter your subject">
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="msg_subject" id="msg_subject" className="form-control"
+                                placeholder="Subject" required data-error="Please enter your subject" />
+                            <div className="help-block with-errors"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
-                        <div class="form-group">
+                    <div className="col-lg-12">
+                        <div className="form-group">
                             <label>
-                                <i class="icofont-comment"></i>
+                                <i className="icofont-comment"></i>
                             </label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="8"
-                                placeholder="Write message" required="" data-error="Write your message"></textarea>
-                            <div class="help-block with-errors"></div>
+                            <textarea name="message" className="form-control" id="message" cols={30} rows={8}
+                                placeholder="Write message" required data-error="Write your message"></textarea>
+                            <div className="help-block with-errors"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-12 col-md-12">
-                        <div class="form-group">
-                            <div class="form-check agree-label">
+                    <div className="col-lg-12 col-md-12">
+                        <div className="form-group">
+                            <div className="form-check agree-label">
                                 <input name="gridCheck" value="I agree to the terms and privacy policy."
-                                    class="form-check-input" type="checkbox" id="gridCheck" required="">
-                                <label class="form-check-label" for="gridCheck">
+                                    className="form-check-input" type="checkbox" id="gridCheck" required />
+                                <label className="form-check-label" htmlFor="gridCheck">
                                     Accept <a href="https://uthansevasansthan.com/terms-condition.html">Terms & Conditions</a> And <a
                                         href="https://uthansevasansthan.com/privacy-policy.html">Privacy Policy.</a>
                                 </label>
-                                <div class="help-block with-errors gridCheck-error"></div>
+                                <div className="help-block with-errors gridCheck-error"></div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
-                        <button type="submit" class="btn common-btn">
+                    <div className="col-lg-12">
+                        <button type="submit" className="btn common-btn">
                             Send Message
                         </button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
+                        <div id="msgSubmit" className="h3 text-center hidden"></div>
+                        <div className="clearfix"></div>
                     </div>
                 </div>
 
@@ -293,45 +295,45 @@ export default function Page() {
 
         </div>
     </div>
-    <!-- End Contact -->
+    {/*  End Contact  */}
 
-    <!-- Map -->
-    <div class="map-area">
+    {/*  Map  */}
+    <div className="map-area">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3555.9627039067564!2d75.74666997527362!3d26.968080376614264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db2fb3ab1b94b%3A0x7edf17cc869f496e!2s31%2C%20Green%20Park%20Ext%2C%20Dadi%20Ka%20Phatak%2C%20Anand%20Vihar%2C%20Sita%20Vihar%2C%20Jaipur%2C%20Rajasthan%20302012!5e0!3m2!1sen!2sin!4v1774432470019!5m2!1sen!2sin"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="100%" height={450} style={{"border":"0"}} allowFullScreen loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- End Map -->
+    {/*  End Map  */}
 
-    <!-- Footer -->
-    <footer class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
+    {/*  Footer  */}
+    <footer className="footer-area pt-100">
+        <div className="container">
+            <div className="row">
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo" href="/">
-                                <img src="/images/logo.png" class="w-25" alt="Logo">
-                            </a>
+                <div className="col-sm-6 col-lg-3">
+                    <div className="footer-item">
+                        <div className="footer-logo">
+                            <Link className="logo" href="/">
+                                <img src="/images/logo.png" className="w-25" alt="Logo" />
+                            </Link>
                             <p>We are committed to creating a positive impact by providing education, promoting health
                                 and wellness, protecting the environment, and supporting underprivileged communities.
                             </p>
                             <ul>
                                 <li>
                                     <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
-                                        <i class="fa-brands fa-threads"></i>
+                                        <i className="fa-brands fa-threads"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
+                                        <i className="icofont-youtube-play"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
-                                        <i class="icofont-instagram"></i>
+                                        <i className="icofont-instagram"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -339,26 +341,26 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-causes">
+                <div className="col-sm-6 col-lg-3">
+                    <div className="footer-item">
+                        <div className="footer-causes">
                             <h3>Urgent causes</h3>
 
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
+                            <div className="cause-inner">
+                                <ul className="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/contact.html#">Education for Underprivileged Children</a>
+                                            <Link href="/contact.html#">Education for Underprivileged Children</Link>
                                         </h3>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
+                            <div className="cause-inner">
+                                <ul className="align-items-center">
                                     <li>
                                         <h3>
-                                            <a href="/contact.html#">Support Environmental Protection</a>
+                                            <Link href="/contact.html#">Support Environmental Protection</Link>
                                         </h3>
                                     </li>
                                 </ul>
@@ -368,21 +370,21 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-links">
+                <div className="col-sm-6 col-lg-3">
+                    <div className="footer-item">
+                        <div className="footer-links">
                             <h3>Quick links</h3>
                             <ul>
                                 <li>
-                                    <a href="/about">
-                                        <i class="icofont-simple-right"></i>
+                                    <Link href="/about">
+                                        <i className="icofont-simple-right"></i>
                                         About
-                                    </a>
+                                    </Link>
                                 </li>
 
                                 <li>
                                     <a href="https://uthansevasansthan.com/donation.html">
-                                        <i class="icofont-simple-right"></i>
+                                        <i className="icofont-simple-right"></i>
                                         Donation
                                     </a>
                                 </li>
@@ -391,30 +393,30 @@ export default function Page() {
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-contact">
+                <div className="col-sm-6 col-lg-3">
+                    <div className="footer-item">
+                        <div className="footer-contact">
                             <h3>Contact info</h3>
-                            <div class="contact-inner">
+                            <div className="contact-inner">
                                 <ul>
                                     <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <i className="icofont-location-pin"></i>
+                                        <Link href="/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
                                     </li>
                                     <li>
-                                        <i class="icofont-ui-call"></i>
+                                        <i className="icofont-ui-call"></i>
                                         <a href="tel:9828603138">9828603138</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="contact-inner">
+                            <div className="contact-inner">
                                 <ul>
                                     <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
+                                        <i className="icofont-location-pin"></i>
+                                        <Link href="/contact.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
                                     </li>
                                     <li>
-                                        <i class="icofont-ui-call"></i>
+                                        <i className="icofont-ui-call"></i>
                                         <a href="tel:9785488455">9785488455</a>
                                     </li>
                                 </ul>
@@ -424,89 +426,89 @@ export default function Page() {
                 </div>
 
             </div>
-            <div class="copyright-area">
+            <div className="copyright-area">
                 <p>Copyright @
-                    <script>document.write(new Date().getFullYear())</script> Uthan seva sansthan. </a>
+                    {new Date().getFullYear()} Uthan seva sansthan.
                 </p>
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
+    {/*  End Footer  */}
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919828603138" target="_blank" class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
+    {/*  WhatsApp Button  */}
+    <a href="https://wa.me/919828603138" target="_blank" className="whatsapp-btn">
+        <i className="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
+    {/*  Modal  */}
+    <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+            <div className="modal-content custom-modal">
 
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
+                {/*  Close  */}
+                <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3"
                     data-bs-dismiss="modal"></button>
 
-                <div class="modal-body p-4">
+                <div className="modal-body p-4">
 
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
+                    {/*  Title  */}
+                    <h4 className="text-warning fw-bold">Your Donation</h4>
+                    <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
 
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
+                    {/*  Details  */}
+                    <h5 className="text-warning fw-bold">Details</h5>
 
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
+                    <div className="row g-3 mb-3">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="First Name" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="Last Name" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
+                        <div className="col-md-6">
+                            <input type="email" className="form-control" placeholder="Email" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="Address" />
                         </div>
                     </div>
 
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
+                    <textarea className="form-control mb-3" rows={3} placeholder="Message"></textarea>
+
+                    {/*  Payment  */}
+                    <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+
+                    <div className="mb-3">
+                        <input type="radio" defaultChecked /> Payment By Card
+                        <input type="radio" className="ms-3" /> Offline Donation
+                    </div>
+
+                    {/*  Cards  */}
+                    <div className="d-flex gap-3 mb-3">
+                        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+                        <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+                        <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
+                    </div>
+
+                    {/*  Card Details  */}
+                    <div className="row g-3">
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Card holder Name" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Card Number" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="CVV" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Expire Date" />
+                        </div>
+                    </div>
+
+                    {/*  Button  */}
+                    <div className="text-center mt-4">
+                        <button className="btn btn-outline-success px-4">Donate Now</button>
                     </div>
 
                 </div>
@@ -515,75 +517,75 @@ export default function Page() {
     </div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
+    {/*  Modal  */}
+    <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+            <div className="modal-content custom-modal">
 
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
+                {/*  Close  */}
+                <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3"
                     data-bs-dismiss="modal"></button>
 
-                <div class="modal-body p-4">
+                <div className="modal-body p-4">
 
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
+                    {/*  Title  */}
+                    <h4 className="text-warning fw-bold">Your Donation</h4>
+                    <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
 
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
+                    {/*  Details  */}
+                    <h5 className="text-warning fw-bold">Details</h5>
 
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
+                    <div className="row g-3 mb-3">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="First Name" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="Last Name" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
+                        <div className="col-md-6">
+                            <input type="email" className="form-control" placeholder="Email" />
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
+                        <div className="col-md-6">
+                            <input type="text" className="form-control" placeholder="Address" />
                         </div>
                     </div>
 
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
+                    <textarea className="form-control mb-3" rows={3} placeholder="Message"></textarea>
+
+                    {/*  Payment  */}
+                    <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+
+                    <div className="mb-3">
+                        <input type="radio" defaultChecked /> Payment By Card
+                        <input type="radio" className="ms-3" /> Offline Donation
+                    </div>
+
+                    {/*  Cards  */}
+                    <div className="d-flex gap-3 mb-3">
+                        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+                        <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+                        <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
+                    </div>
+
+                    {/*  Card Details  */}
+                    <div className="row g-3">
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Card holder Name" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Card Number" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="CVV" />
+                        </div>
+                        <div className="col-md-3">
+                            <input type="text" className="form-control" placeholder="Expire Date" />
+                        </div>
+                    </div>
+
+                    {/*  Button  */}
+                    <div className="text-center mt-4">
+                        <button className="btn btn-outline-success px-4">Donate Now</button>
                     </div>
 
                 </div>
@@ -591,30 +593,31 @@ export default function Page() {
         </div>
     </div>
 
-    <!-- Go Top -->
-    <div class="go-top">
-        <i class="icofont-arrow-up"></i>
-        <i class="icofont-arrow-up"></i>
+    {/*  Go Top  */}
+    <div className="go-top">
+        <i className="icofont-arrow-up"></i>
+        <i className="icofont-arrow-up"></i>
     </div>
-    <!-- End Go Top -->
+    {/*  End Go Top  */}
 
 
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
+    {/* === Essential JS === */}
 
-` }} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </>
   );
 }
