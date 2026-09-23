@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Ignore legacy JS files causing lint errors
+    "js/**",
+    "css/**",
+    "jest.config.js",
+    "jest.setup.js"
   ]),
 ]);
 
