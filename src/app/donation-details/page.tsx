@@ -1,144 +1,11 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Preloader -->
-
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                <a href="/donation-details.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-call"></i>
-                                <a href="tel:9785488455">9785488455, 9828603138</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span><strong>Registration No.:</strong></span>
-                                <span class="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
-                            </li>
-                        </ul>
-
-                        <div class="header-search">
-                            <i id="search-btn" class="icofont-search-2"></i>
-                            <div id="search-overlay" class="block">
-                                <div class="centered">
-                                    <div id="search-box">
-                                        <i id="close-btn" class="icofont-close"></i>
-                                        <form>
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <button type="submit" class="btn">Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navbar-area sticky-top">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/images/logo.png" class="logo-two" alt="Logo">
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
-
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/gallery" class="nav-link">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/donation-details.html#" class="nav-link dropdown-toggle">Donations <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/donations" class="nav-link">Donations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/donation-details.html#" class="nav-link">Donation Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/our-document" class="nav-link">Documents</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Blog <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog-details" class="nav-link">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="/contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                         <div class="side-nav">
-                            <a class="donate-btn" href="/donation-details.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
-                                Donate
-                                <i class="icofont-heart-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
-    <!-- End Navbar -->
+    <>
+      <Header />
+      <div dangerouslySetInnerHTML={{ __html: `
 
 
 
@@ -229,22 +96,22 @@ export default function Page() {
                                                 <span>Share:</span>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/#" target="_blank">
                                                     <i class="icofont-facebook"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/#" target="_blank">
                                                     <i class="icofont-twitter"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/#" target="_blank">
                                                     <i class="icofont-youtube-play"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#" target="_blank">
+                                                <a href="/#" target="_blank">
                                                     <i class="icofont-instagram"></i>
                                                 </a>
                                             </li>
@@ -259,13 +126,13 @@ export default function Page() {
                                                 <span>Tags:</span>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Donation</a>
+                                                <a href="/#">#Donation</a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Food</a>
+                                                <a href="/#">#Food</a>
                                             </li>
                                             <li>
-                                                <a href="/donation-details.html#">#Help</a>
+                                                <a href="/#">#Help</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -361,9 +228,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Donate for nutrition less poor people</a>
+                                            <a href="/#">Donate for nutrition less poor people</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -374,9 +241,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Charity meetup in Berlin next year</a>
+                                            <a href="/#">Charity meetup in Berlin next year</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -387,9 +254,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Donate for poor people for food & water</a>
+                                            <a href="/#">Donate for poor people for food & water</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -400,9 +267,9 @@ export default function Page() {
                                     </li>
                                     <li>
                                         <h4>
-                                            <a href="/donation-details.html#">Little Sanjana joined in a charity to help people</a>
+                                            <a href="/#">Little Sanjana joined in a charity to help people</a>
                                         </h4>
-                                        <p>By - <a href="/donation-details.html#">Admin</a></p>
+                                        <p>By - <a href="/#">Admin</a></p>
                                     </li>
                                 </ul>
                             </div>
@@ -412,16 +279,16 @@ export default function Page() {
                             <h3>Archives</h3>
                             <ul>
                                 <li>
-                                    <a href="/donation-details.html#">January 2024</a>
+                                    <a href="/#">January 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">May 2024</a>
+                                    <a href="/#">May 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">April 2024</a>
+                                    <a href="/#">April 2024</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">June 2024</a>
+                                    <a href="/#">June 2024</a>
                                 </li>
                             </ul>
                         </div>
@@ -430,19 +297,19 @@ export default function Page() {
                             <h3>Categories</h3>
                             <ul>
                                 <li>
-                                    <a href="/donation-details.html#">Education (10)</a>
+                                    <a href="/#">Education (10)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Medical (25)</a>
+                                    <a href="/#">Medical (25)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Food & Water (14)</a>
+                                    <a href="/#">Food & Water (14)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">National Charity (2)</a>
+                                    <a href="/#">National Charity (2)</a>
                                 </li>
                                 <li>
-                                    <a href="/donation-details.html#">Cloth (4)</a>
+                                    <a href="/#">Cloth (4)</a>
                                 </li>
                             </ul>
                         </div>
@@ -458,317 +325,8 @@ export default function Page() {
 
 
 
-    <!-- Footer -->
-    <footer class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo" href="/">
-                                <img src="/images/logo.png" class="w-25" alt="Logo">
-                            </a>
-                            <p>We are committed to creating a positive impact by providing education, promoting health
-                                and wellness, protecting the environment, and supporting underprivileged communities.
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
-                                        <i class="fa-brands fa-threads"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-causes">
-                            <h3>Urgent causes</h3>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/donation-details.html#">Education for Underprivileged Children</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/donation-details.html#">Support Environmental Protection</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-links">
-                            <h3>Quick links</h3>
-                            <ul>
-                                <li>
-                                    <a href="/about">
-                                        <i class="icofont-simple-right"></i>
-                                        About
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://uthansevasansthan.com/donation.html">
-                                        <i class="icofont-simple-right"></i>
-                                        Donation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-contact">
-                            <h3>Contact info</h3>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9828603138">9828603138</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/donation-details.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9785488455">9785488455</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="copyright-area">
-                <p>Copyright @
-                    <script>document.write(new Date().getFullYear())</script> Uthan seva sansthan. </a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919828603138" target="_blank" class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Go Top -->
-    <div class="go-top">
-        <i class="icofont-arrow-up"></i>
-        <i class="icofont-arrow-up"></i>
-    </div>
-    <!-- End Go Top -->
-
-
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
-
-` }} />
+      `}} />
+      <Footer />
+    </>
   );
 }
