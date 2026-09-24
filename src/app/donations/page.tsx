@@ -446,68 +446,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-        {/* Modal */}
-        <div className="modal fade" id="donationModal" tabIndex={-1}>
-          <div className="modal-dialog modal-lg modal-dialog-centered">
-            <div className="modal-content custom-modal">
-              {/* Close */}
-              <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3" data-bs-dismiss="modal" />
-              <div className="modal-body p-4">
-                {/* Title */}
-                <h4 className="text-warning fw-bold">Your Donation</h4>
-                <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
-                {/* Details */}
-                <h5 className="text-warning fw-bold">Details</h5>
-                <div className="row g-3 mb-3">
-                  <div className="col-md-6">
-                    <input type="text" className="form-control" placeholder="First Name" />
-                  </div>
-                  <div className="col-md-6">
-                    <input type="text" className="form-control" placeholder="Last Name" />
-                  </div>
-                  <div className="col-md-6">
-                    <input type="email" className="form-control" placeholder="Email" />
-                  </div>
-                  <div className="col-md-6">
-                    <input type="text" className="form-control" placeholder="Address" />
-                  </div>
-                </div>
-                <textarea className="form-control mb-3" rows={3} placeholder="Message" defaultValue={""} />
-                {/* Payment */}
-                <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
-                <div className="mb-3">
-                  <input type="radio" defaultChecked /> Payment By Card
-                  <input type="radio" className="ms-3" /> Offline Donation
-                </div>
-                {/* Cards */}
-                <div className="d-flex gap-3 mb-3">
-                  <img src="https://img.icons8.com/color/48/visa.png"  alt="" />
-                  <img src="https://img.icons8.com/color/48/mastercard.png"  alt="" />
-                  <img src="https://img.icons8.com/color/48/paypal.png"  alt="" />
-                </div>
-                {/* Card Details */}
-                <div className="row g-3">
-                  <div className="col-md-3">
-                    <input type="text" className="form-control" placeholder="Card holder Name" />
-                  </div>
-                  <div className="col-md-3">
-                    <input type="text" className="form-control" placeholder="Card Number" />
-                  </div>
-                  <div className="col-md-3">
-                    <input type="text" className="form-control" placeholder="CVV" />
-                  </div>
-                  <div className="col-md-3">
-                    <input type="text" className="form-control" placeholder="Expire Date" />
-                  </div>
-                </div>
-                {/* Button */}
-                <div className="text-center mt-4">
-                  <button className="btn btn-outline-success px-4">Donate Now</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* Go Top */}
         <div className="go-top">
           <i className="icofont-arrow-up" />

@@ -115,7 +115,7 @@ export default function Header() {
                                 <a href="/contact" className="nav-link">Contact</a>
                             </li>
                         </ul>
-                         <div class="side-nav">
+                         <div className="side-nav">
                             <a className="donate-btn" href="#" data-bs-toggle="modal" data-bs-target="#donationModal">
                                 Donate
                                 <i className="icofont-heart-alt"></i>
