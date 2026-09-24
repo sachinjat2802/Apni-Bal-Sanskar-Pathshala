@@ -1,903 +1,784 @@
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Page() {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
-                </div>
+    <>
+      {/* Preloader */}
+      <div className="loader">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="pre-box-one">
+              <div className="pre-box-two" />
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Preloader -->
-
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                <a href="/gallery.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-call"></i>
-                                <a href="tel:9785488455">9785488455, 9828603138</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span><strong>Registration No.:</strong></span>
-                                <span class="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
-                            </li>
-                        </ul>
-
-                        <div class="header-search">
-                            <i id="search-btn" class="icofont-search-2"></i>
-                            <div id="search-overlay" class="block">
-                                <div class="centered">
-                                    <div id="search-box">
-                                        <i id="close-btn" class="icofont-close"></i>
-                                        <form>
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <button type="submit" class="btn">Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+      </div>
+      {/* End Preloader */}
+      <div className="header-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="left">
+                <ul>
+                  <li>
+                    <i className="icofont-location-pin" />
+                    <Link href="/gallery.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</Link>
+                  </li>
+                  <li>
+                    <i className="icofont-ui-call" />
+                    <a href="tel:9785488455">9785488455, 9828603138</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <div class="navbar-area sticky-top">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/images/logo.png" class="logo-two" alt="Logo">
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
-
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/gallery" class="nav-link">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/gallery.html#" class="nav-link dropdown-toggle">Donations <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/donations" class="nav-link">Donations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/gallery.html#" class="nav-link">Donation Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/our-document" class="nav-link">Documents</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Blog <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog-details" class="nav-link">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="/contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                         <div class="side-nav">
-                            <a class="donate-btn" href="/gallery.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
-                                Donate
-                                <i class="icofont-heart-alt"></i>
-                            </a>
-                        </div>
+            <div className="col-lg-6">
+              <div className="right">
+                <ul className="list-unstyled">
+                  <li>
+                    <span><strong>Registration No.:</strong></span>
+                    <span className="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
+                  </li>
+                </ul>
+                <div className="header-search">
+                  <i id="search-btn" className="icofont-search-2" />
+                  <div id="search-overlay" className="block">
+                    <div className="centered">
+                      <div id="search-box">
+                        <i id="close-btn" className="icofont-close" />
+                        <form>
+                          <input type="text" className="form-control" placeholder="Search..." />
+                          <button type="submit" className="btn">Search</button>
+                        </form>
+                      </div>
                     </div>
-                </nav>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- End Navbar -->
-
-
-
-
-    <!-- Page Title -->
-    <div class="page-title-area title-bg-two">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="container">
-                    <div class="title-item">
-                        <h2>Gallery</h2>
-                        <ul>
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <span>Gallery</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+      {/* Navbar */}
+      <div className="navbar-area sticky-top">
+        {/* Menu For Mobile Device */}
+        <div className="mobile-nav">
+          <Link href="/" className="logo">
+            <Image src="/images/logo.png" alt="Logo" width={500} height={300} />
+          </Link>
         </div>
-    </div>
-    <!-- End Page Title -->
-
-    <!-- Gallery -->
-    <section class="gallery-area two pt-100 pb-70">
-        <div class="container-fluid">
-            <div class="section-title">
-                <span class="sub-title">Our gallery</span>
-                <h2>Explore Our Work & Achievements</h2>
-                <p>We proudly showcase the moments that reflect our dedication and impact. Our gallery highlights the
-                    activities, events, and initiatives that define who we are.
-
-                </p>
-            </div>
-            <div class="row">
-
-                <!-- 1 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/1.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/1.jpeg" class="img-fluid" alt="Gallery 1">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
+        {/* Menu For Desktop Device */}
+        <div className="main-nav">
+          <div className="container">
+            <nav className="navbar navbar-expand-md navbar-light">
+              <Link className="navbar-brand" href="/">
+                <Image src="/images/logo.png" className="logo-one" alt="Logo" width={500} height={300} />
+                <Image src="/images/logo.png" className="logo-two" alt="Logo" width={500} height={300} />
+              </Link>
+              <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <Link href="/" className="nav-link dropdown-toggle active">Home </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/about" className="nav-link">About</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/gallery" className="nav-link">Gallery</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/gallery.html#" className="nav-link dropdown-toggle">Donations <i className="icofont-simple-down" /></Link>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link href="/donations" className="nav-link">Donations</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link href="/gallery.html#" className="nav-link">Donation Details</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/our-document" className="nav-link">Documents</Link>
+                  </li>
+                  {/* <li class="nav-item">
+                              <Link href="#" class="nav-link dropdown-toggle">Blog <i
+                                      class="icofont-simple-down"></i></Link>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item">
+                                      <Link href="/blog" class="nav-link">Blog</Link>
+                                  </li>
+                                  <li class="nav-item">
+                                      <Link href="/blog-details" class="nav-link">Blog Details</Link>
+                                  </li>
+                              </ul>
+                          </li> */}
+                  <li className="nav-item">
+                    <Link href="/contact" className="nav-link">Contact</Link>
+                  </li>
+                </ul>
+                <div className="side-nav">
+                  <a className="donate-btn" href="/gallery.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                    Donate
+                    <i className="icofont-heart-alt" />
+                  </a>
                 </div>
-
-                <!-- 2 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/2.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/2.jpeg" class="img-fluid" alt="Gallery 2">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/3.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/3.jpeg" class="img-fluid" alt="Gallery 3">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 4 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/4.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/4.jpeg" class="img-fluid" alt="Gallery 4">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 5 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/5.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/5.jpeg" class="img-fluid" alt="Gallery 5">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 6 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/6.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/6.jpeg" class="img-fluid" alt="Gallery 6">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 7 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/7.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/7.jpeg" class="img-fluid" alt="Gallery 7">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 8 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/8.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/8.jpeg" class="img-fluid" alt="Gallery 8">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 9 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/9.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/9.jpeg" class="img-fluid" alt="Gallery 9">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/10.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/10.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- 10 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/11.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/11.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- 11 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/13.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/13.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <!-- 11 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/15.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/15.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/16.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/16.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/17.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/17.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/18.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/18.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/19.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/19.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/20.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/20.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/22.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/22.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/23.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/23.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/24.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/24.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/25.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/25.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/26.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/26.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/27.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/27.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/28.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/28.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/29.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/29.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/30.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/30.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/31.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/31.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/32.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/32.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/33.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/33.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/34.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/34.jpeg" class="img-fluid" alt="Gallery 10">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-
-                <!-- 35 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/35.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/35.jpeg" class="img-fluid" alt="Gallery 35">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 36 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/36.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/36.jpeg" class="img-fluid" alt="Gallery 36">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 37 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/37.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/37.jpeg" class="img-fluid" alt="Gallery 37">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 38 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/38.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/38.jpeg" class="img-fluid" alt="Gallery 38">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 39 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/39.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/39.jpeg" class="img-fluid" alt="Gallery 39">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 40 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/40.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/40.jpeg" class="img-fluid" alt="Gallery 40">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 41 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/41.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/41.jpeg" class="img-fluid" alt="Gallery 41">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 42 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/42.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/42.jpeg" class="img-fluid" alt="Gallery 42">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 43 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/43.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/43.jpeg" class="img-fluid" alt="Gallery 43">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 44 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/44.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/44.jpeg" class="img-fluid" alt="Gallery 44">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 45 -->
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="gallery-item">
-                        <a href="/images/gallary-img/45.jpeg" data-lightbox="roadtrip">
-                            <img src="/images/gallary-img/45.jpeg" class="img-fluid" alt="Gallery 45">
-                            <i class="icofont-eye"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+              </div>
+            </nav>
+          </div>
         </div>
-        </div>
-    </section>
-    <!-- End Gallery -->
-
-
-
-    <!-- Footer -->
-    <footer class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo" href="/">
-                                <img src="/images/logo.png" class="w-25" alt="Logo">
-                            </a>
-                            <p>We are committed to creating a positive impact by providing education, promoting health
-                                and wellness, protecting the environment, and supporting underprivileged communities.
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
-                                        <i class="fa-brands fa-threads"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-causes">
-                            <h3>Urgent causes</h3>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/gallery.html#">Education for Underprivileged Children</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/gallery.html#">Support Environmental Protection</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-links">
-                            <h3>Quick links</h3>
-                            <ul>
-                                <li>
-                                    <a href="/about">
-                                        <i class="icofont-simple-right"></i>
-                                        About
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://uthansevasansthan.com/donation.html">
-                                        <i class="icofont-simple-right"></i>
-                                        Donation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-contact">
-                            <h3>Contact info</h3>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9828603138">9828603138</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9785488455">9785488455</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+      </div>
+      {/* End Navbar */}
+      {/* Page Title */}
+      <div className="page-title-area title-bg-two">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="container">
+              <div className="title-item">
+                <h2>Gallery</h2>
+                <ul>
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    <span>Gallery</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="copyright-area">
-                <p>Copyright @
-                    <script>document.write(new Date().getFullYear())</script> Uthan seva sansthan. </a>
-                </p>
-            </div>
+          </div>
         </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919828603138" target="_blank" class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
+      </div>
+      {/* End Page Title */}
+      {/* Gallery */}
+      <section className="gallery-area two pt-100 pb-70">
+        <div className="container-fluid">
+          <div className="section-title">
+            <span className="sub-title">Our gallery</span>
+            <h2>Explore Our Work &amp; Achievements</h2>
+            <p>We proudly showcase the moments that reflect our dedication and impact. Our gallery highlights the
+              activities, events, and initiatives that define who we are.
+            </p>
+          </div>
+          <div className="row">
+            {/* 1 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/1.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/1.jpeg" className="img-fluid" alt="Gallery 1" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 2 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/2.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/2.jpeg" className="img-fluid" alt="Gallery 2" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 3 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/3.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/3.jpeg" className="img-fluid" alt="Gallery 3" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 4 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/4.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/4.jpeg" className="img-fluid" alt="Gallery 4" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 5 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/5.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/5.jpeg" className="img-fluid" alt="Gallery 5" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 6 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/6.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/6.jpeg" className="img-fluid" alt="Gallery 6" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 7 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/7.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/7.jpeg" className="img-fluid" alt="Gallery 7" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 8 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/8.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/8.jpeg" className="img-fluid" alt="Gallery 8" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 9 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/9.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/9.jpeg" className="img-fluid" alt="Gallery 9" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 10 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/10.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/10.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 10 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/11.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/11.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 11 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/13.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/13.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 11 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/15.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/15.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/16.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/16.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/17.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/17.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/18.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/18.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/19.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/19.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/20.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/20.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/22.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/22.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/23.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/23.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/24.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/24.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/25.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/25.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/26.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/26.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/27.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/27.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/28.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/28.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/29.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/29.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/30.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/30.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/31.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/31.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/32.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/32.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/33.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/33.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/34.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/34.jpeg" className="img-fluid" alt="Gallery 10" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 35 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/35.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/35.jpeg" className="img-fluid" alt="Gallery 35" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 36 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/36.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/36.jpeg" className="img-fluid" alt="Gallery 36" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 37 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/37.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/37.jpeg" className="img-fluid" alt="Gallery 37" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 38 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/38.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/38.jpeg" className="img-fluid" alt="Gallery 38" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 39 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/39.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/39.jpeg" className="img-fluid" alt="Gallery 39" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 40 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/40.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/40.jpeg" className="img-fluid" alt="Gallery 40" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 41 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/41.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/41.jpeg" className="img-fluid" alt="Gallery 41" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 42 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/42.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/42.jpeg" className="img-fluid" alt="Gallery 42" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 43 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/43.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/43.jpeg" className="img-fluid" alt="Gallery 43" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 44 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/44.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/44.jpeg" className="img-fluid" alt="Gallery 44" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+            {/* 45 */}
+            <div className="col-lg-3 col-md-4 col-sm-6 mb-4">
+              <div className="gallery-item">
+                <Link href="/images/gallary-img/45.jpeg" data-lightbox="roadtrip">
+                  <Image src="/images/gallary-img/45.jpeg" className="img-fluid" alt="Gallery 45" width={500} height={300} />
+                  <i className="icofont-eye" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* End Gallery */}
+      {/* Footer */}
+      <footer className="footer-area pt-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-logo">
+                  <Link className="logo" href="/">
+                    <Image src="/images/logo.png" className="w-25" alt="Logo" width={500} height={300} />
+                  </Link>
+                  <p>We are committed to creating a positive impact by providing education, promoting health
+                    and wellness, protecting the environment, and supporting underprivileged communities.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
+                        <i className="fa-brands fa-threads" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
+                        <i className="icofont-youtube-play" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
+                        <i className="icofont-instagram" />
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-causes">
+                  <h3>Urgent causes</h3>
+                  <div className="cause-inner">
+                    <ul className="align-items-center">
+                      <li>
+                        <h3>
+                          <Link href="/gallery.html#">Education for Underprivileged Children</Link>
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="cause-inner">
+                    <ul className="align-items-center">
+                      <li>
+                        <h3>
+                          <Link href="/gallery.html#">Support Environmental Protection</Link>
+                        </h3>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-links">
+                  <h3>Quick links</h3>
+                  <ul>
+                    <li>
+                      <Link href="/about">
+                        <i className="icofont-simple-right" />
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <a href="https://uthansevasansthan.com/donation.html">
+                        <i className="icofont-simple-right" />
+                        Donation
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6 col-lg-3">
+              <div className="footer-item">
+                <div className="footer-contact">
+                  <h3>Contact info</h3>
+                  <div className="contact-inner">
+                    <ul>
+                      <li>
+                        <i className="icofont-location-pin" />
+                        <Link href="/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
+                      </li>
+                      <li>
+                        <i className="icofont-ui-call" />
+                        <a href="tel:9828603138">9828603138</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="contact-inner">
+                    <ul>
+                      <li>
+                        <i className="icofont-location-pin" />
+                        <Link href="/gallery.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
+                      </li>
+                      <li>
+                        <i className="icofont-ui-call" />
+                        <a href="tel:9785488455">9785488455</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="copyright-area">
+            <p>Copyright @
+              {'{'}new Date().getFullYear(){'}'} Uthan seva sansthan.
+            </p>
+          </div>
         </div>
-    </div>
+      </footer>
+      {/* End Footer */}
+      {/* WhatsApp Button */}
+      <a href="https://wa.me/919828603138" target="_blank" className="whatsapp-btn">
+        <i className="fa-brands fa-whatsapp" />
+      </a>
+      {/* Modal */}
+      <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            {/* Close */}
+            <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3" data-bs-dismiss="modal" />
+            <div className="modal-body p-4">
+              {/* Title */}
+              <h4 className="text-warning fw-bold">Your Donation</h4>
+              <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
+              {/* Details */}
+              <h5 className="text-warning fw-bold">Details</h5>
+              <div className="row g-3 mb-3">
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="First Name" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="Last Name" />
+                </div>
+                <div className="col-md-6">
+                  <input type="email" className="form-control" placeholder="Email" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="Address" />
+                </div>
+              </div>
+              <textarea className="form-control mb-3" rows={3} placeholder="Message" defaultValue={""} />
+              {/* Payment */}
+              <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+              <div className="mb-3">
+                <input type="radio" defaultChecked /> Payment By Card
+                <input type="radio" className="ms-3" /> Offline Donation
+              </div>
+              {/* Cards */}
+              <div className="d-flex gap-3 mb-3">
+                <Image src="https://img.icons8.com/color/48/visa.png" width={50} height={50} alt="icon" />
+                <Image src="https://img.icons8.com/color/48/mastercard.png" width={50} height={50} alt="icon" />
+                <Image src="https://img.icons8.com/color/48/paypal.png" width={50} height={50} alt="icon" />
+              </div>
+              {/* Card Details */}
+              <div className="row g-3">
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Card holder Name" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Card Number" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="CVV" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Expire Date" />
+                </div>
+              </div>
+              {/* Button */}
+              <div className="text-center mt-4">
+                <button className="btn btn-outline-success px-4">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Modal */}
+      <div className="modal fade" id="donationModal" tabIndex={-1}>
+        <div className="modal-dialog modal-lg modal-dialog-centered">
+          <div className="modal-content custom-modal">
+            {/* Close */}
+            <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3" data-bs-dismiss="modal" />
+            <div className="modal-body p-4">
+              {/* Title */}
+              <h4 className="text-warning fw-bold">Your Donation</h4>
+              <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
+              {/* Details */}
+              <h5 className="text-warning fw-bold">Details</h5>
+              <div className="row g-3 mb-3">
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="First Name" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="Last Name" />
+                </div>
+                <div className="col-md-6">
+                  <input type="email" className="form-control" placeholder="Email" />
+                </div>
+                <div className="col-md-6">
+                  <input type="text" className="form-control" placeholder="Address" />
+                </div>
+              </div>
+              <textarea className="form-control mb-3" rows={3} placeholder="Message" defaultValue={""} />
+              {/* Payment */}
+              <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+              <div className="mb-3">
+                <input type="radio" defaultChecked /> Payment By Card
+                <input type="radio" className="ms-3" /> Offline Donation
+              </div>
+              {/* Cards */}
+              <div className="d-flex gap-3 mb-3">
+                <Image src="https://img.icons8.com/color/48/visa.png" width={50} height={50} alt="icon" />
+                <Image src="https://img.icons8.com/color/48/mastercard.png" width={50} height={50} alt="icon" />
+                <Image src="https://img.icons8.com/color/48/paypal.png" width={50} height={50} alt="icon" />
+              </div>
+              {/* Card Details */}
+              <div className="row g-3">
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Card holder Name" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Card Number" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="CVV" />
+                </div>
+                <div className="col-md-3">
+                  <input type="text" className="form-control" placeholder="Expire Date" />
+                </div>
+              </div>
+              {/* Button */}
+              <div className="text-center mt-4">
+                <button className="btn btn-outline-success px-4">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Go Top */}
+      <div className="go-top">
+        <i className="icofont-arrow-up" />
+        <i className="icofont-arrow-up" />
+      </div>
+      {/* End Go Top */}
+      {/*=== Essential JS ===*/}
+    </>
 
-    <!-- Go Top -->
-    <div class="go-top">
-        <i class="icofont-arrow-up"></i>
-        <i class="icofont-arrow-up"></i>
-    </div>
-    <!-- End Go Top -->
-
-
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
-
-` }} />
   );
 }
