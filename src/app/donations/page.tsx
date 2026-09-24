@@ -1,721 +1,637 @@
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
-    <div dangerouslySetInnerHTML={{ __html: `
-    <!-- Preloader -->
-    <div class="loader">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="pre-box-one">
-                    <div class="pre-box-two"></div>
-                </div>
-            </div>
+    <>
+<div>
+  {/* Preloader */}
+  <div className="loader">
+    <div className="d-table">
+      <div className="d-table-cell">
+        <div className="pre-box-one">
+          <div className="pre-box-two" />
         </div>
+      </div>
     </div>
-    <!-- End Preloader -->
-
-    <div class="header-area">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="left">
-                        <ul>
-                            <li>
-                                <i class="icofont-location-pin"></i>
-                                <a href="/donations.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</a>
-                            </li>
-                            <li>
-                                <i class="icofont-ui-call"></i>
-                                <a href="tel:9785488455">9785488455, 9828603138</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="right">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span><strong>Registration No.:</strong></span>
-                                <span class="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
-                            </li>
-                        </ul>
-
-                        <div class="header-search">
-                            <i id="search-btn" class="icofont-search-2"></i>
-                            <div id="search-overlay" class="block">
-                                <div class="centered">
-                                    <div id="search-box">
-                                        <i id="close-btn" class="icofont-close"></i>
-                                        <form>
-                                            <input type="text" class="form-control" placeholder="Search...">
-                                            <button type="submit" class="btn">Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+  </div>
+  {/* End Preloader */}
+  <div className="header-area">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-6">
+          <div className="left">
+            <ul>
+              <li>
+                <i className="icofont-location-pin" />
+                <Link href="/donations.html#">31, Green Park Extension, Nangal Jaisa Bohra, Jaipur.</Link>
+              </li>
+              <li>
+                <i className="icofont-ui-call" />
+                <Link href="tel:9785488455">9785488455, 9828603138</Link>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div className="col-lg-6">
+          <div className="right">
+            <ul className="list-unstyled">
+              <li>
+                <span><strong>Registration No.:</strong></span>
+                <span className="text-white">( रजि. COOP/2018 /JAIPUR /103636 )</span>
+              </li>
+            </ul>
+            <div className="header-search">
+              <i id="search-btn" className="icofont-search-2" />
+              <div id="search-overlay" className="block">
+                <div className="centered">
+                  <div id="search-box">
+                    <i id="close-btn" className="icofont-close" />
+                    <form>
+                      <input type="text" className="form-control" placeholder="Search..." />
+                      <button type="submit" className="btn">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-
-    <!-- Navbar -->
-    <div class="navbar-area sticky-top">
-        <!-- Menu For Mobile Device -->
-        <div class="mobile-nav">
-            <a href="/" class="logo">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-
-        <!-- Menu For Desktop Device -->
-        <div class="main-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/logo.png" class="logo-one" alt="Logo">
-                        <img src="/images/logo.png" class="logo-two" alt="Logo">
-                    </a>
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link dropdown-toggle active">Home </a>
-
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/gallery" class="nav-link">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/donations.html#" class="nav-link dropdown-toggle">Donations <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/donations" class="nav-link">Donations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/donation-details" class="nav-link">Donation Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a href="/our-document" class="nav-link">Documents</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Blog <i
-                                        class="icofont-simple-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="/blog" class="nav-link">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/blog-details" class="nav-link">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-                            <li class="nav-item">
-                                <a href="/contact" class="nav-link">Contact</a>
-                            </li>
-                        </ul>
-                         <div class="side-nav">
-                            <a class="donate-btn" href="/donations.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
-                                Donate
-                                <i class="icofont-heart-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
+  </div>
+  {/* Navbar */}
+  <div className="navbar-area sticky-top">
+    {/* Menu For Mobile Device */}
+    <div className="mobile-nav">
+      <Link href="/" className="logo">
+        <Image src="/images/logo.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+      </Link>
     </div>
-    <!-- End Navbar -->
-
-    <!-- Page Title -->
-    <div class="page-title-area title-bg-three">
-        <div class="d-table">
-            <div class="d-table-cell">
-                <div class="container">
-                    <div class="title-item">
-                        <h2>Donations</h2>
-                        <ul>
-                            <li>
-                                <a href="/">Home</a>
-                            </li>
-                            <li>
-                                <span>Donations</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Page Title -->
-
-
-
-    <section class="donations-area ptb-100">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/20.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Medical</a>
-                                <h3>
-                                    <a href="/donation-details">Need help for treatment</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$5,500.00</li>
-                                    <li>Goal: \$7,000.00</li>
-                                </ul>
-                                <h4>Donated by <span>60 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/13.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Education</a>
-                                <h3>
-                                    <a href="/donation-details">Education for poor children</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill2 wow fadeInLeftBig">
-                                        <span class="skill-count2">95%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$6,500.00</li>
-                                    <li>Goal: \$8,050.00</li>
-                                </ul>
-                                <h4>Donated by <span>50 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/35.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Family</a>
-                                <h3>
-                                    <a href="/donation-details">Financial help for poor</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill3 wow fadeInLeftBig">
-                                        <span class="skill-count3">90%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$5,540.00</li>
-                                    <li>Goal: \$6,055.00</li>
-                                </ul>
-                                <h4>Donated by <span>40 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/15.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Funding</a>
-                                <h3>
-                                    <a href="/donation-details">Funding for family</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill4 wow fadeInLeftBig">
-                                        <span class="skill-count4">80%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$5,56.00</li>
-                                    <li>Goal: \$6,85.00</li>
-                                </ul>
-                                <h4>Donated by <span>30 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/16.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Relief</a>
-                                <h3>
-                                    <a href="/donation-details">Relief for cyclone-affected</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill5 wow fadeInLeftBig">
-                                        <span class="skill-count5">75%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$5,5.00</li>
-                                    <li>Goal: \$3,85.00</li>
-                                </ul>
-                                <h4>Donated by <span>20 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="/images/gallary-img/17.jpeg" alt="Donation">
-                            <a class="common-btn" href="/donation-details">Donate Now</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/donations.html#">#Drought</a>
-                                <h3>
-                                    <a href="/donation-details">Relief for drought-affected</a>
-                                </h3>
-                                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
-                                    individual
-                                    citizens.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill6 wow fadeInLeftBig">
-                                        <span class="skill-count6">70%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Raised: \$9,5.00</li>
-                                    <li>Goal: \$3,84.00</li>
-                                </ul>
-                                <h4>Donated by <span>10 people</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="pagination-area">
-                <ul>
-                    <li>
-                        <a href="/donations.html#">Prev</a>
-                    </li>
-                    <li>
-                        <a class="active" href="/donations.html#">1</a>
-                    </li>
-                    <li>
-                        <a href="/donations.html#">2</a>
-                    </li>
-                    <li>
-                        <a href="/donations.html#">3</a>
-                    </li>
-                    <li>
-                        <a href="/donations.html#">Next</a>
-                    </li>
+    {/* Menu For Desktop Device */}
+    <div className="main-nav">
+      <div className="container">
+        <nav className="navbar navbar-expand-md navbar-light">
+          <Link className="navbar-brand" href="/">
+            <Image src="/images/logo.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"    className="logo-one"    />
+            <Image src="/images/logo.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"    className="logo-two"    />
+          </Link>
+          <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link href="/" className="nav-link dropdown-toggle active">Home </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/about" className="nav-link">About</Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/gallery" className="nav-link">Gallery</Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/donations.html#" className="nav-link dropdown-toggle">Donations <i className="icofont-simple-down" /></Link>
+                <ul className="dropdown-menu">
+                  <li className="nav-item">
+                    <Link href="/donations" className="nav-link">Donations</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link href="/donation-details" className="nav-link">Donation Details</Link>
+                  </li>
                 </ul>
+              </li>
+              <li className="nav-item">
+                <Link href="/our-document" className="nav-link">Documents</Link>
+              </li>
+              {/* <li className="nav-item">
+                          <Link href="#" className="nav-link dropdown-toggle">Blog <i
+                                  className="icofont-simple-down"></i></Link>
+                          <ul className="dropdown-menu">
+                              <li className="nav-item">
+                                  <Link href="/blog" className="nav-link">Blog</Link>
+                              </li>
+                              <li className="nav-item">
+                                  <Link href="/blog-details" className="nav-link">Blog Details</Link>
+                              </li>
+                          </ul>
+                      </li> */}
+              <li className="nav-item">
+                <Link href="/contact" className="nav-link">Contact</Link>
+              </li>
+            </ul>
+            <div className="side-nav">
+              <Link className="donate-btn" href="/donations.html#" data-bs-toggle="modal" data-bs-target="#donationModal">
+                Donate
+                <i className="icofont-heart-alt" />
+              </Link>
             </div>
-        </div>
-    </section>
-
-     <section class="donation-area py-5 text-center feature-area" style="">
-    <div class="container">
-        <div class="section-title">
-            <span class="sub-title text-white">Support Us</span>
-            <h2 class="text-white">Make a Donation</h2>
-            <p class="text-white">Your support helps us educate and empower children for a better future.</p>
-        </div>
-
-        <div class="donation-box">
-            <img src="/images/qr.jpeg" alt="UPI QR Code" style="max-width:300px; width:100%; border-radius:10px;">
-
-            <h4 style="margin-top:15px;">UTHAN SEWA SANSTHAN</h4>
-            <p><strong>UPI ID:</strong> uthan98286894@barodampay</p>
-        </div>
+          </div>
+        </nav>
+      </div>
     </div>
-</section>
-
-
-
-    <!-- Footer -->
-    <footer class="footer-area pt-100">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-logo">
-                            <a class="logo" href="/">
-                                <img src="/images/logo.png" class="w-25" alt="Logo">
-                            </a>
-                            <p>We are committed to creating a positive impact by providing education, promoting health
-                                and wellness, protecting the environment, and supporting underprivileged communities.
-                            </p>
-                            <ul>
-                                <li>
-                                    <a href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
-                                        <i class="fa-brands fa-threads"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
-                                        <i class="icofont-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
-                                        <i class="icofont-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-causes">
-                            <h3>Urgent causes</h3>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/donations.html#">Education for Underprivileged Children</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="cause-inner">
-                                <ul class="align-items-center">
-                                    <li>
-                                        <h3>
-                                            <a href="/donations.html#">Support Environmental Protection</a>
-                                        </h3>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-links">
-                            <h3>Quick links</h3>
-                            <ul>
-                                <li>
-                                    <a href="/about">
-                                        <i class="icofont-simple-right"></i>
-                                        About
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://uthansevasansthan.com/donation.html">
-                                        <i class="icofont-simple-right"></i>
-                                        Donation
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="footer-item">
-                        <div class="footer-contact">
-                            <h3>Contact info</h3>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9828603138">9828603138</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contact-inner">
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        <a href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:9785488455">9785488455</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="copyright-area">
-                <p>Copyright @
-                    <script>document.write(new Date().getFullYear())</script> Uthan seva sansthan. </a>
-                </p>
-            </div>
+  </div>
+  {/* End Navbar */}
+  {/* Page Title */}
+  <div className="page-title-area title-bg-three">
+    <div className="d-table">
+      <div className="d-table-cell">
+        <div className="container">
+          <div className="title-item">
+            <h2>Donations</h2>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <span>Donations</span>
+              </li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <!-- End Footer -->
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919828603138" target="_blank" class="whatsapp-btn">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
-                </div>
+      </div>
+    </div>
+  </div>
+  {/* End Page Title */}
+  <section className="donations-area ptb-100">
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/20.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
             </div>
-        </div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="donationModal" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content custom-modal">
-
-                <!-- Close -->
-                <button type="button" class="btn-close position-absolute top-0 end-0 z-1 m-3"
-                    data-bs-dismiss="modal"></button>
-
-                <div class="modal-body p-4">
-
-                    <!-- Title -->
-                    <h4 class="text-warning fw-bold">Your Donation</h4>
-                    <input type="text" class="form-control mb-3" placeholder="Enter Donation Amount">
-
-                    <!-- Details -->
-                    <h5 class="text-warning fw-bold">Details</h5>
-
-                    <div class="row g-3 mb-3">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Address">
-                        </div>
-                    </div>
-
-                    <textarea class="form-control mb-3" rows="3" placeholder="Message"></textarea>
-
-                    <!-- Payment -->
-                    <h5 class="text-warning fw-bold">Choose Your Payment Method</h5>
-
-                    <div class="mb-3">
-                        <input type="radio" checked> Payment By Card
-                        <input type="radio" class="ms-3"> Offline Donation
-                    </div>
-
-                    <!-- Cards -->
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://img.icons8.com/color/48/visa.png" />
-                        <img src="https://img.icons8.com/color/48/mastercard.png" />
-                        <img src="https://img.icons8.com/color/48/paypal.png" />
-                    </div>
-
-                    <!-- Card Details -->
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card holder Name">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Card Number">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="CVV">
-                        </div>
-                        <div class="col-md-3">
-                            <input type="text" class="form-control" placeholder="Expire Date">
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center mt-4">
-                        <button class="btn btn-outline-success px-4">Donate Now</button>
-                    </div>
-
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Medical</Link>
+                <h3>
+                  <Link href="/donation-details">Need help for treatment</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill1 wow fadeInLeftBig">
+                    <span className="skill-count1">85%</span>
+                  </div>
                 </div>
+                <ul>
+                  <li>Raised: \$5,500.00</li>
+                  <li>Goal: \$7,000.00</li>
+                </ul>
+                <h4>Donated by <span>60 people</span></h4>
+              </div>
             </div>
+          </div>
         </div>
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/13.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
+            </div>
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Education</Link>
+                <h3>
+                  <Link href="/donation-details">Education for poor children</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill2 wow fadeInLeftBig">
+                    <span className="skill-count2">95%</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>Raised: \$6,500.00</li>
+                  <li>Goal: \$8,050.00</li>
+                </ul>
+                <h4>Donated by <span>50 people</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/35.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
+            </div>
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Family</Link>
+                <h3>
+                  <Link href="/donation-details">Financial help for poor</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill3 wow fadeInLeftBig">
+                    <span className="skill-count3">90%</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>Raised: \$5,540.00</li>
+                  <li>Goal: \$6,055.00</li>
+                </ul>
+                <h4>Donated by <span>40 people</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/15.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
+            </div>
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Funding</Link>
+                <h3>
+                  <Link href="/donation-details">Funding for family</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill4 wow fadeInLeftBig">
+                    <span className="skill-count4">80%</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>Raised: \$5,56.00</li>
+                  <li>Goal: \$6,85.00</li>
+                </ul>
+                <h4>Donated by <span>30 people</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/16.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
+            </div>
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Relief</Link>
+                <h3>
+                  <Link href="/donation-details">Relief for cyclone-affected</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill5 wow fadeInLeftBig">
+                    <span className="skill-count5">75%</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>Raised: \$5,5.00</li>
+                  <li>Goal: \$3,85.00</li>
+                </ul>
+                <h4>Donated by <span>20 people</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-4">
+          <div className="donation-item">
+            <div className="img">
+              <Image src="/images/gallary-img/17.jpeg" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"       />
+              <Link className="common-btn" href="/donation-details">Donate Now</Link>
+            </div>
+            <div className="inner">
+              <div className="top">
+                <Link className="tags" href="/donations.html#">#Drought</Link>
+                <h3>
+                  <Link href="/donation-details">Relief for drought-affected</Link>
+                </h3>
+                <p>We exist for non-profits, social enterprises, activists. Lorem politicians and
+                  individual
+                  citizens.</p>
+              </div>
+              <div className="bottom">
+                <div className="skill">
+                  <div className="skill-bar skill6 wow fadeInLeftBig">
+                    <span className="skill-count6">70%</span>
+                  </div>
+                </div>
+                <ul>
+                  <li>Raised: \$9,5.00</li>
+                  <li>Goal: \$3,84.00</li>
+                </ul>
+                <h4>Donated by <span>10 people</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pagination-area">
+        <ul>
+          <li>
+            <Link href="/donations.html#">Prev</Link>
+          </li>
+          <li>
+            <Link className="active" href="/donations.html#">1</Link>
+          </li>
+          <li>
+            <Link href="/donations.html#">2</Link>
+          </li>
+          <li>
+            <Link href="/donations.html#">3</Link>
+          </li>
+          <li>
+            <Link href="/donations.html#">Next</Link>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <!-- Go Top -->
-    <div class="go-top">
-        <i class="icofont-arrow-up"></i>
-        <i class="icofont-arrow-up"></i>
+  </section>
+  <section className="donation-area py-5 text-center feature-area" style={{}}>
+    <div className="container">
+      <div className="section-title">
+        <span className="sub-title text-white">Support Us</span>
+        <h2 className="text-white">Make a Donation</h2>
+        <p className="text-white">Your support helps us educate and empower children for a better future.</p>
+      </div>
+      <div className="donation-box">
+        <Image src="/images/qr.jpeg" width={500} height={500} unoptimized={true}  alt="Image"     style={{maxWidth: 300, width: '100%', borderRadius: 10}}   />
+        <h4 style={{marginTop: 15}}>UTHAN SEWA SANSTHAN</h4>
+        <p><strong>UPI ID:</strong> uthan98286894@barodampay</p>
+      </div>
     </div>
-    <!-- End Go Top -->
+  </section>
+  {/* Footer */}
+  <footer className="footer-area pt-100">
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-6 col-lg-3">
+          <div className="footer-item">
+            <div className="footer-logo">
+              <Link className="logo" href="/">
+                <Image src="/images/logo.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"    className="w-25"    />
+              </Link>
+              <p>We are committed to creating a positive impact by providing education, promoting health
+                and wellness, protecting the environment, and supporting underprivileged communities.
+              </p>
+              <ul>
+                <li>
+                  <Link href="https://www.threads.net/@apnibalsanskarphatsala" target="_blank">
+                    <i className="fa-brands fa-threads" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.youtube.com/@ApnibalSanskarpathshala" target="_blank">
+                    <i className="icofont-youtube-play" />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://www.instagram.com/apnibalsanskarphatsala/" target="_blank">
+                    <i className="icofont-instagram" />
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-3">
+          <div className="footer-item">
+            <div className="footer-causes">
+              <h3>Urgent causes</h3>
+              <div className="cause-inner">
+                <ul className="align-items-center">
+                  <li>
+                    <h3>
+                      <Link href="/donations.html#">Education for Underprivileged Children</Link>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+              <div className="cause-inner">
+                <ul className="align-items-center">
+                  <li>
+                    <h3>
+                      <Link href="/donations.html#">Support Environmental Protection</Link>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-3">
+          <div className="footer-item">
+            <div className="footer-links">
+              <h3>Quick links</h3>
+              <ul>
+                <li>
+                  <Link href="/about">
+                    <i className="icofont-simple-right" />
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="https://uthansevasansthan.com/donation.html">
+                    <i className="icofont-simple-right" />
+                    Donation
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-sm-6 col-lg-3">
+          <div className="footer-item">
+            <div className="footer-contact">
+              <h3>Contact info</h3>
+              <div className="contact-inner">
+                <ul>
+                  <li>
+                    <i className="icofont-location-pin" />
+                    <Link href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
+                  </li>
+                  <li>
+                    <i className="icofont-ui-call" />
+                    <Link href="tel:9828603138">9828603138</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="contact-inner">
+                <ul>
+                  <li>
+                    <i className="icofont-location-pin" />
+                    <Link href="/donations.html#"> 31, Green Park Extension, Nangal Jaisa Bohra, Jaipur</Link>
+                  </li>
+                  <li>
+                    <i className="icofont-ui-call" />
+                    <Link href="tel:9785488455">9785488455</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="copyright-area">
+        <p>Copyright @
+          Uthan seva sansthan.
+        </p>
+      </div>
+    </div>
+  </footer>
+  {/* End Footer */}
+  {/* WhatsApp Button */}
+  <Link href="https://wa.me/919828603138" target="_blank" className="whatsapp-btn">
+    <i className="fa-brands fa-whatsapp" />
+  </Link>
+  {/* Modal */}
+  <div className="modal fade" id="donationModal" tabIndex={-1}>
+    <div className="modal-dialog modal-lg modal-dialog-centered">
+      <div className="modal-content custom-modal">
+        {/* Close */}
+        <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3" data-bs-dismiss="modal" />
+        <div className="modal-body p-4">
+          {/* Title */}
+          <h4 className="text-warning fw-bold">Your Donation</h4>
+          <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
+          {/* Details */}
+          <h5 className="text-warning fw-bold">Details</h5>
+          <div className="row g-3 mb-3">
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="First Name" />
+            </div>
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Last Name" />
+            </div>
+            <div className="col-md-6">
+              <input type="email" className="form-control" placeholder="Email" />
+            </div>
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Address" />
+            </div>
+          </div>
+          <textarea className="form-control mb-3" rows={3} placeholder="Message" defaultValue={""} />
+          {/* Payment */}
+          <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+          <div className="mb-3">
+            <input type="radio" defaultChecked /> Payment By Card
+            <input type="radio" className="ms-3" /> Offline Donation
+          </div>
+          {/* Cards */}
+          <div className="d-flex gap-3 mb-3">
+            <Image src="https://img.icons8.com/color/48/visa.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+            <Image src="https://img.icons8.com/color/48/mastercard.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+            <Image src="https://img.icons8.com/color/48/paypal.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+          </div>
+          {/* Card Details */}
+          <div className="row g-3">
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Card holder Name" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Card Number" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="CVV" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Expire Date" />
+            </div>
+          </div>
+          {/* Button */}
+          <div className="text-center mt-4">
+            <button className="btn btn-outline-success px-4">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Modal */}
+  <div className="modal fade" id="donationModal" tabIndex={-1}>
+    <div className="modal-dialog modal-lg modal-dialog-centered">
+      <div className="modal-content custom-modal">
+        {/* Close */}
+        <button type="button" className="btn-close position-absolute top-0 end-0 z-1 m-3" data-bs-dismiss="modal" />
+        <div className="modal-body p-4">
+          {/* Title */}
+          <h4 className="text-warning fw-bold">Your Donation</h4>
+          <input type="text" className="form-control mb-3" placeholder="Enter Donation Amount" />
+          {/* Details */}
+          <h5 className="text-warning fw-bold">Details</h5>
+          <div className="row g-3 mb-3">
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="First Name" />
+            </div>
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Last Name" />
+            </div>
+            <div className="col-md-6">
+              <input type="email" className="form-control" placeholder="Email" />
+            </div>
+            <div className="col-md-6">
+              <input type="text" className="form-control" placeholder="Address" />
+            </div>
+          </div>
+          <textarea className="form-control mb-3" rows={3} placeholder="Message" defaultValue={""} />
+          {/* Payment */}
+          <h5 className="text-warning fw-bold">Choose Your Payment Method</h5>
+          <div className="mb-3">
+            <input type="radio" defaultChecked /> Payment By Card
+            <input type="radio" className="ms-3" /> Offline Donation
+          </div>
+          {/* Cards */}
+          <div className="d-flex gap-3 mb-3">
+            <Image src="https://img.icons8.com/color/48/visa.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+            <Image src="https://img.icons8.com/color/48/mastercard.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+            <Image src="https://img.icons8.com/color/48/paypal.png" width={500} height={500} style={{ width: "auto", height: "auto", maxWidth: "100%" }} unoptimized={true}  alt="Image"      />
+          </div>
+          {/* Card Details */}
+          <div className="row g-3">
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Card holder Name" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Card Number" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="CVV" />
+            </div>
+            <div className="col-md-3">
+              <input type="text" className="form-control" placeholder="Expire Date" />
+            </div>
+          </div>
+          {/* Button */}
+          <div className="text-center mt-4">
+            <button className="btn btn-outline-success px-4">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* Go Top */}
+  <div className="go-top">
+    <i className="icofont-arrow-up" />
+    <i className="icofont-arrow-up" />
+  </div>
+  {/* End Go Top */}
+  {/*=== Essential JS ===*/}
+</div>
 
 
-    <!--=== Essential JS ===-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/form-validator.min.js"></script>
-    <script src="/js/contact-form-script.js"></script>
-    <script src="/js/jquery.ajaxchimp.min.js"></script>
-    <script src="/js/jquery.meanmenu.js"></script>
-    <script src="/js/jquery-modal-video.min.js"></script>
-    <script src="/js/wow.min.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script src="/js/owl.carousel.min.js"></script>
-    <script src="/js/odometer.min.js"></script>
-    <script src="/js/jquery.appear.min.js"></script>
-    <script src="/js/jquery.nice-select.min.js"></script>
-    <script src="/js/custom.js"></script>
-
-` }} />
+    </>
   );
 }
